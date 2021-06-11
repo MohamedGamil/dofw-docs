@@ -315,6 +315,16 @@ html #mode .dark {
 }
 
 
+/* FONT */
+html, body,
+h1, h2, h3, h4, h5, h6,
+div, p, strong, i, u, table, span,
+blockquote, input, textarea, select {
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+
 /* ADDONS */
 .m-t-15 {
     margin-top: 15px;
