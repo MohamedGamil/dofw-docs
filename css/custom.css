@@ -45,6 +45,14 @@ html.dark a:hover {
     color: #F16811;
 }
 
+html.dark .intro2 a {
+    color: #411e08;
+}
+
+html.dark .intro2 a:hover {
+    text-decoration: underline !important;
+}
+
 html.dark .intro2 {
     background-color: #F16811;
     border-color: #DE7844;
@@ -304,4 +312,68 @@ html #mode .dark {
 
 .syntaxhighlighter .js.keyword {
     color: #b48ead !important;
+}
+
+
+/* FONT */
+html, body,
+h1, h2, h3, h4, h5, h6,
+div, p, strong, i, u, table, span,
+blockquote, input, textarea, select {
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+}
+
+
+/* ADDONS */
+.m-t-15 {
+    margin-top: 15px;
+}
+.m-b-15 {
+    margin-bottom: 15px;
+}
+.m-y-15 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.m-t-30 {
+    margin-top: 30px;
+}
+.m-b-30 {
+    margin-bottom: 30px;
+}
+.m-y-30 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+ul.list {
+}
+ul.list li {
+    display: list-item;
+    list-style: disc;
+    margin-left: 20px;
+    padding-left: 5px;
+}
+
+/* FIXES */
+code {
+    font-weight: bold;
+}
+
+code.type {
+    color: #353131;
+}
+
+.syntaxhighlighter {
+    padding-top: 26px;
+}
+.syntaxhighlighter table td.code .container textarea {
+    margin-top: -13px !important;
+    /* height: 103% !important; */
+    height: 111% !important;
+    min-height: 18px !important;
+}
+.syntaxhighlighter .line.number1 {
+    margin-top: -13px !important;
 }
