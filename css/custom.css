@@ -360,8 +360,8 @@ code.type {
 }
 .syntaxhighlighter table td.code .container textarea {
     margin-top: -13px !important;
-    height: 103% !important;
-    /* height: 111% !important; */
+    /* height: 103% !important; */
+    height: 111% !important;
     min-height: 18px !important;
 }
 .syntaxhighlighter .line.number1 {
