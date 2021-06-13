@@ -2341,6 +2341,11 @@ Search.appendIndex(
             "summary": "Force\u0020Download\u0020JSON\u0020as\u0020a\u0020file.",
             "url": "namespaces/default.html#function_dofw_force_download_json"
         },                {
+            "fqsen": "\\dofw_activation_enabled\u0028\u0029",
+            "name": "dofw_activation_enabled",
+            "summary": "Is\u0020activation\u0020enabled\u003F",
+            "url": "namespaces/default.html#function_dofw_activation_enabled"
+        },                {
             "fqsen": "\\dofw_activation_page\u0028\u0029",
             "name": "dofw_activation_page",
             "summary": "Get\u0020Activation\u0020Page.",
