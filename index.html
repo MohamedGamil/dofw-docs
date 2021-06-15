@@ -2353,19 +2353,19 @@
                             It is quite simple to get or fetch a field value, and there number of ways to do so,
                             <br> Here is the most straightforward one in the following example:
                         </p>
-                        
+
                         <pre class="brush: php; highlight: [5,11]">
                             // Use the `dofw()` function to quickly get access to DOFW front controller,
                             // then use the `get_field_value()` method by passing to it your section and field ID, 
                             // and an optional field value for the first and second parameters respectively.
 
-                            dofw()->get_field_value( '{section_id}.{my_field_id}', 'default_value' );
+                            dofw()->get_field_value( 'SECTION_ID.MY_FIELD_ID', 'default_value' );
                             
                             // By default your field name is your field ID, prefixed by its parent section ID.
                             // If you provided a custom `name` to you field definition, you can use it 
                             // to retrieve your field value right away without field's section id
 
-                            dofw()->get_field_value( '{my_field_name}', 'default_value' );
+                            dofw()->get_field_value( 'MY_FIELD_NAME', 'default_value' );
                         </pre>
                         <hr>
 
