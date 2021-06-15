@@ -766,10 +766,45 @@ Search.appendIndex(
             "summary": "Add\u0020pages\u0027\u0020fields.",
             "url": "classes/Do-Framework-Default-Pages.html#method__add_pages_fields"
         },                {
+            "fqsen": "\\Do_Framework_Default_Pages\u003A\u003A_add_general_sections\u0028\u0029",
+            "name": "_add_general_sections",
+            "summary": "Add\u0020General\u0020Page\u0020Sections.",
+            "url": "classes/Do-Framework-Default-Pages.html#method__add_general_sections"
+        },                {
+            "fqsen": "\\Do_Framework_Default_Pages\u003A\u003A_add_general_fields\u0028\u0029",
+            "name": "_add_general_fields",
+            "summary": "Add\u0020General\u0020Page\u0020Fields",
+            "url": "classes/Do-Framework-Default-Pages.html#method__add_general_fields"
+        },                {
+            "fqsen": "\\Do_Framework_Default_Pages\u003A\u003A_add_theme_sections\u0028\u0029",
+            "name": "_add_theme_sections",
+            "summary": "Add\u0020Theme\u0020Page\u0020Sections.",
+            "url": "classes/Do-Framework-Default-Pages.html#method__add_theme_sections"
+        },                {
+            "fqsen": "\\Do_Framework_Default_Pages\u003A\u003A_add_theme_fields\u0028\u0029",
+            "name": "_add_theme_fields",
+            "summary": "Add\u0020Theme\u0020Page\u0020Fields",
+            "url": "classes/Do-Framework-Default-Pages.html#method__add_theme_fields"
+        },                {
+            "fqsen": "\\Do_Framework_Default_Pages\u003A\u003A_add_advanced_sections\u0028\u0029",
+            "name": "_add_advanced_sections",
+            "summary": "Add\u0020Advanced\u0020Page\u0020Sections.",
+            "url": "classes/Do-Framework-Default-Pages.html#method__add_advanced_sections"
+        },                {
+            "fqsen": "\\Do_Framework_Default_Pages\u003A\u003A_add_advanced_fields\u0028\u0029",
+            "name": "_add_advanced_fields",
+            "summary": "Add\u0020Advanced\u0020Page\u0020Fields",
+            "url": "classes/Do-Framework-Default-Pages.html#method__add_advanced_fields"
+        },                {
             "fqsen": "\\Do_Framework_Default_Pages\u003A\u003A_set_config\u0028\u0029",
             "name": "_set_config",
             "summary": "Set\u0020Pages\u0020Configuration.",
             "url": "classes/Do-Framework-Default-Pages.html#method__set_config"
+        },                {
+            "fqsen": "\\Do_Framework_Default_Pages\u003A\u003A_page_enabled\u0028\u0029",
+            "name": "_page_enabled",
+            "summary": "Check\u0020if\u0020a\u0020given\u0020page\u0020is\u0020enabled\u0020by\u0020configuration.",
+            "url": "classes/Do-Framework-Default-Pages.html#method__page_enabled"
         },                {
             "fqsen": "\\Do_Framework_Default_Pages\u003A\u003AENABLE_PAGES",
             "name": "ENABLE_PAGES",
@@ -2340,6 +2375,11 @@ Search.appendIndex(
             "name": "dofw_force_download_json",
             "summary": "Force\u0020Download\u0020JSON\u0020as\u0020a\u0020file.",
             "url": "namespaces/default.html#function_dofw_force_download_json"
+        },                {
+            "fqsen": "\\dofw_activation_enabled\u0028\u0029",
+            "name": "dofw_activation_enabled",
+            "summary": "Is\u0020activation\u0020enabled\u003F",
+            "url": "namespaces/default.html#function_dofw_activation_enabled"
         },                {
             "fqsen": "\\dofw_activation_page\u0028\u0029",
             "name": "dofw_activation_page",

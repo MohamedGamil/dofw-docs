@@ -97,7 +97,7 @@
                     <div class="col-md-12">
                         <div class="big-title text-center">
                             <h1>DO Framework</h1>
-                            <p class="lead">Documentation for version 1.8.6</p>
+                            <p class="lead">Documentation for version 1.8.8</p>
                         </div>
                         <!-- end title -->
                     </div>
@@ -177,7 +177,7 @@
                                         <div class="intro1">
                                             <ul>
                                                 <li><strong>Item Name: </strong>DO Framework</li>
-                                                <li><strong>Item Version: </strong> v1.8.6</li>
+                                                <li><strong>Item Version: </strong> v1.8.8</li>
                                                 <li><strong>Author: </strong> <a href="https://codecanyon.net/user/dedulab" target="_blank">Dedulab</a></li>
                                                 <li><strong>Support: </strong> <a href="https://dedulab.com/support" target="_blank">Get Support</a></li>
                                                 <li><strong>License: </strong> <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html" target="_blank">GNU General Public License v2.0 or later</a></li>
@@ -1898,6 +1898,9 @@
                                 'label' => 'Image Select Field',
                                 'desc' => 'Image select field description',
                                 'options' => [
+                                    // Display items on the same line, defaults to "true"
+                                    'inline' => true,
+
                                     // Set as required field
                                     'required' => false,
 
@@ -2218,8 +2221,8 @@
                                     // Picker input icon
                                     'icon' => 'calendar',
 
-                                    // Picker type, possible options are: "date", "time", and "datetime"
-                                    'type' => 'datetime',
+                                    // Picker mode, possible options are: "date", "time", and "datetime"
+                                    'mode' => 'datetime',
 
                                     // Set as required field
                                     'required' => false,
@@ -2597,6 +2600,30 @@
                             add_filter('DOFW/Class/Activation', function () {
                                 return My_Custom_Validation::class;
                             });
+                        </pre>
+                        <hr>
+                        
+                        <p>
+                            <i class="fa fa-info-circle"></i> &nbsp;
+                            <strong>
+                                If you want to disable activation feature
+                            </strong>
+                            including the activation page, and its related UI components, you can do so 
+                            <strong>
+                                by simply defining a constant <code>DOFW_ENABLE_ACTIVATION</code> and set its value to <code>false</code>,
+                                but make sure to do so <i><u>before</u></i> including plugin's <code>autoload.php</code> file.
+                            </strong>
+                            <br> <br>
+                            Otherwise, you can disable the activation functionality by using the <code>DOFW/Activation/Enabled</code> 
+                            filter as illustrated in the example below:
+                        </p>
+
+                        <pre class="brush: php">
+                            function my_prefix_disable_dofw_activation( $enabled ) {
+                                return false;
+                            }
+
+                            add_filter('DOFW/Activation/Enabled', 'my_prefix_disable_dofw_activation');
                         </pre>
                         <hr>
 
@@ -3180,6 +3207,29 @@
                                 <h4>Changelog</h4>
 
                                 <pre class="brush: html">
+
+                                        -----------------------------------------------------------------------------------------
+                                        Plugin version 1.8.8
+                                        -----------------------------------------------------------------------------------------
+                                        - Restructure fields for default general page 
+                                        - Add block-level option (disable inline items) for image selector field
+                                        - Refactor default pages class 
+                                        - Update default pages configuration
+                                        - Hotfix for fields with array values
+
+                                        -----------------------------------------------------------------------------------------
+                                        Plugin version 1.8.7
+                                        -----------------------------------------------------------------------------------------
+                                        - Add activation toggling ability
+                                        - Change date field `type` option to `mode`
+                                        - Fix default pages class logo issue
+                                        - Update API reference & documentation
+                                        - Responsive fixes
+                                        - Scroll active tab into view
+                                        - Common Responsive Styling 
+                                        - Dashboard Responsive Styling 
+                                        - Demos & Plugins Responsive Styling 
+                                        - Backup Responsive Styling
 
                                         -----------------------------------------------------------------------------------------
                                         Plugin version 1.8.6
