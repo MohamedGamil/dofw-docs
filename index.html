@@ -148,6 +148,7 @@
                                     <li><a href="#field-type-slider">Slider</a></li>
                                 </ul> -->
                             </li>
+                            <li><a href="#getting-field-value">Getting Field Value</a></li>
                             <li><a href="#adding-demos">Adding Demos</a></li>
                             <li><a href="#adding-plugins">Adding Plugins</a></li>
                             <li><a href="#activation-integration">Activation Integration</a></li>
@@ -2331,6 +2332,49 @@
                                 <a href="./ref/classes/DOFW-Fields-Slider.html" target="_blank">
                                     <code class="type">Class:</code>
                                     <code>\DOFW\Fields\Slider</code>
+                                </a>
+                            </li>
+                        </ul>
+
+                    </section>
+                    <!-- end section -->
+
+                    <section id="getting-field-value" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="dark-text"> Getting Field Value <hr></h2>
+                            </div>
+                            <!-- end col -->
+                        </div>
+                        <!-- end row -->
+
+                        <p>
+                            It is quite simple to get or fetch a field value, and there number of ways to do so,
+                            <br> Here is the most straightforward one in the following example:
+                        </p>
+                        
+                        <pre class="brush: php; highlight: [5,11]">
+                            // Use the `dofw()` function to quickly get access to DOFW front controller,
+                            // then use the `get_field_value()` method by passing to it your section and field ID, 
+                            // and an optional field value for the first and second parameters respectively.
+
+                            dofw()->get_field_value( '{section_id}.{my_field_id}', 'default_value' );
+                            
+                            // By default your field name is your field ID, prefixed by its parent section ID.
+                            // If you provided a custom `name` to you field definition, you can use it 
+                            // to retrieve your field value right away without field's section id
+
+                            dofw()->get_field_value( '{my_field_name}', 'default_value' );
+                        </pre>
+                        <hr>
+
+                        <h4>API Reference:</h4>
+                        <ul class="list">
+                            <li>
+                                <a href="./ref/classes/Do-Framework-Front-Controller.html#method_get_field_value" target="_blank">
+                                    <code class="type">Method:</code>
+                                    <code>Do_Framework_Front_Controller::get_field_value()</code>
                                 </a>
                             </li>
                         </ul>
