@@ -15,7 +15,7 @@
 rm -f build/do-framework-documentation.zip
 zip -r build/do-framework-documentation.zip . \
     -x \.\* \*/\.\* \*.zip \*.log \*.xml \
-    gulpfile.js package.json package-lock.json \
+    gulpfile.js package.json package-lock.json snippets.html \
     \./\*.lock \./\*.md \
     \*.git\* node_modules\/\* scripts\* build\*
 
