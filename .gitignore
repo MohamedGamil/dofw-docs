@@ -1,1 +1,6 @@
+# DOCS Snippets
 snippets.html
+
+# Build Directory
+/build/*
+!/build/.gitkeep

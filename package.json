@@ -1,0 +1,28 @@
+{
+  "name": "dofw-docs",
+  "version": "1.9.0",
+  "description": "A framework to make options management easier, and end-user experience a breath. Plus much more.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "release": "./scripts/release.sh",
+    "serve": "http-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MohamedGamil/dofw-docs.git"
+  },
+  "keywords": [
+    "wordpress",
+    "options",
+    "framework"
+  ],
+  "author": "Dedulab Team",
+  "license": "GPL-2.0-or-later",
+  "bugs": {
+    "url": "https://github.com/MohamedGamil/dofw-docs/issues"
+  },
+  "homepage": "https://github.com/MohamedGamil/dofw-docs#readme"
+}
