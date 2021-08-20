@@ -196,6 +196,20 @@ ull]                    </span>
 <dd>Supported Page Types.</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Do-Framework-Admin-Page.html#property__builders_count">$_builders_count</a>
+    <span>
+                &nbsp;: int            </span>
+</dt>
+<dd>Unnamed Page Builders counter.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Do-Framework-Admin-Page.html#property__builders_groups">$_builders_groups</a>
+    <span>
+                &nbsp;: array&lt;string|int, string&gt;            </span>
+</dt>
+<dd>Page Builders Groups.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Do-Framework-Admin-Page.html#property__buttons">$_buttons</a>
     <span>
                 &nbsp;: array&lt;string|int, mixed&gt;            </span>
@@ -264,6 +278,13 @@ ull]                    </span>
                 &nbsp;: bool            </span>
 </dt>
 <dd>Is page of type form?</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/Do-Framework-Admin-Page.html#property__namespace">$_namespace</a>
+    <span>
+                &nbsp;: string            </span>
+</dt>
+<dd>Pages Namespace</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Do-Framework-Admin-Page.html#property__options">$_options</a>
@@ -399,13 +420,6 @@ ull]                    </span>
 <dd>Process Page Form Fields.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Do-Framework-Admin-Page.html#method_brackets2id">brackets2id()</a>
-    <span>
-                        &nbsp;: string    </span>
-</dt>
-<dd>Convert &quot;brackets&quot; array key notation to field &quot;id&quot; notation.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/DOFW-Traits-UI.html#method_brackts_to_id">brackts_to_id()</a>
     <span>
                         &nbsp;: string    </span>
@@ -446,13 +460,6 @@ ull]                    </span>
                         &nbsp;: self    </span>
 </dt>
 <dd>Delete All Page Notices.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/Do-Framework-Admin-Page.html#method_dot2brackets">dot2brackets()</a>
-    <span>
-                        &nbsp;: string    </span>
-</dt>
-<dd>Convert &quot;dot&quot; array key notation to &quot;brackets&quot; notation.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/DOFW-Traits-UI.html#method_dot_to_brackts">dot_to_brackts()</a>
@@ -567,6 +574,13 @@ ull]                    </span>
 <dd>Get parsed JSON from a file path / URL.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Do-Framework-Admin-Page.html#method_get_namespace">get_namespace()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Get Page Namespace.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Do-Framework-Admin-Page.html#method_get_nonce">get_nonce()</a>
     <span>
                         &nbsp;: string    </span>
@@ -630,6 +644,13 @@ ull]                    </span>
 <dd>Initialize Page.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Do-Framework-Admin-Page.html#method_is_backup">is_backup()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Check if current page type is of backup type.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Do-Framework-Admin-Page.html#method_is_form">is_form()</a>
     <span>
                         &nbsp;: bool    </span>
@@ -672,6 +693,13 @@ ull]                    </span>
 <dd>Render WordPress Editor Markup.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Do-Framework-Admin-Page.html#method_reset_to_defaults">reset_to_defaults()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Reset page options to defaults.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Do-Framework-Admin-Page.html#method_set_fields_values">set_fields_values()</a>
     <span>
                         &nbsp;: self    </span>
@@ -698,6 +726,13 @@ ull]                    </span>
                         &nbsp;: string    </span>
 </dt>
 <dd>Apply Page Notices.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Do-Framework-Admin-Page.html#method__backup_form_submit">_backup_form_submit()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Intercept Backup Form Submit.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Do-Framework-Admin-Page.html#method__can_save_form">_can_save_form()</a>
@@ -798,6 +833,20 @@ ull]                    </span>
 <dd>Build &amp; Get Form Sections.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Do-Framework-Admin-Page.html#method__get_group_builder_options">_get_group_builder_options()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Get group builder options.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Do-Framework-Admin-Page.html#method__get_group_options">_get_group_options()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Get group options.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Do-Framework-Admin-Page.html#method__get_page_content_wrap">_get_page_content_wrap()</a>
     <span>
                         &nbsp;: string    </span>
@@ -861,11 +910,25 @@ ull]                    </span>
 <dd>Sanitize Field before JSON encoding.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Do-Framework-Admin-Page.html#method__sanitize_values_recursive">_sanitize_values_recursive()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Sanitize array values recursively.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Do-Framework-Admin-Page.html#method__save_fields">_save_fields()</a>
     <span>
                         &nbsp;: self    </span>
 </dt>
 <dd>Save fields &amp; trigger relevant hooks.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Do-Framework-Admin-Page.html#method__set_namespace">_set_namespace()</a>
+    <span>
+                        &nbsp;: bool    </span>
+</dt>
+<dd>Set Page Namespace.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Do-Framework-Admin-Page.html#method__set_options">_set_options()</a>
@@ -1023,6 +1086,70 @@ ull]</span>
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="property__builders_count">
+        $_builders_count
+        <a href="classes/Do-Framework-Admin-Page.html#property__builders_count" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">186</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Unnamed Page Builders counter.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">int</span>
+    <span class="phpdocumentor-signature__name">$_builders_count</span>
+     = <span class="phpdocumentor-signature__default-value">0</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property__builders_groups">
+        $_builders_groups
+        <a href="classes/Do-Framework-Admin-Page.html#property__builders_groups" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">179</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Page Builders Groups.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">array&lt;string|int, string&gt;</span>
+    <span class="phpdocumentor-signature__name">$_builders_groups</span>
+     = <span class="phpdocumentor-signature__default-value">[]</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="property__buttons">
         $_buttons
         <a href="classes/Do-Framework-Admin-Page.html#property__buttons" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1032,7 +1159,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">151</span>
+    <span class="phpdocumentor-element-found-in__line">158</span>
 </aside>
 
         <p class="phpdocumentor-summary">Page Additional Buttons.</p>
@@ -1128,7 +1255,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">95</span>
+    <span class="phpdocumentor-element-found-in__line">102</span>
 </aside>
 
         <p class="phpdocumentor-summary">Custom Field Types.</p>
@@ -1160,7 +1287,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">123</span>
+    <span class="phpdocumentor-element-found-in__line">130</span>
 </aside>
 
         <p class="phpdocumentor-summary">Page Fields.</p>
@@ -1192,7 +1319,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">109</span>
+    <span class="phpdocumentor-element-found-in__line">116</span>
 </aside>
 
         <p class="phpdocumentor-summary">Stored Fields as JSON.</p>
@@ -1224,7 +1351,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">130</span>
+    <span class="phpdocumentor-element-found-in__line">137</span>
 </aside>
 
         <p class="phpdocumentor-summary">Page Fields Groups.</p>
@@ -1256,7 +1383,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">165</span>
+    <span class="phpdocumentor-element-found-in__line">172</span>
 </aside>
 
         <p class="phpdocumentor-summary">Does page has a sidebar?</p>
@@ -1288,7 +1415,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">172</span>
+    <span class="phpdocumentor-element-found-in__line">193</span>
 </aside>
 
         <p class="phpdocumentor-summary">Page ID.</p>
@@ -1320,7 +1447,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">158</span>
+    <span class="phpdocumentor-element-found-in__line">165</span>
 </aside>
 
         <p class="phpdocumentor-summary">Is page of type form?</p>
@@ -1343,6 +1470,38 @@ ull]</span>
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="property__namespace">
+        $_namespace
+        <a href="classes/Do-Framework-Admin-Page.html#property__namespace" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">95</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Pages Namespace</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">string</span>
+    <span class="phpdocumentor-signature__name">$_namespace</span>
+     = <span class="phpdocumentor-signature__default-value">&#039;GLOBAL&#039;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="property__options">
         $_options
         <a href="classes/Do-Framework-Admin-Page.html#property__options" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1352,7 +1511,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">144</span>
+    <span class="phpdocumentor-element-found-in__line">151</span>
 </aside>
 
         <p class="phpdocumentor-summary">Page Options.</p>
@@ -1384,7 +1543,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">116</span>
+    <span class="phpdocumentor-element-found-in__line">123</span>
 </aside>
 
         <p class="phpdocumentor-summary">Fields POST Data.</p>
@@ -1416,7 +1575,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">102</span>
+    <span class="phpdocumentor-element-found-in__line">109</span>
 </aside>
 
         <p class="phpdocumentor-summary">Stored Rendered Fields.</p>
@@ -1448,7 +1607,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">137</span>
+    <span class="phpdocumentor-element-found-in__line">144</span>
 </aside>
 
         <p class="phpdocumentor-summary">Page Sections.</p>
@@ -1484,7 +1643,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">200</span>
+    <span class="phpdocumentor-element-found-in__line">221</span>
 </aside>
 
         <p class="phpdocumentor-summary">Class constructor</p>
@@ -1529,7 +1688,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">643</span>
+    <span class="phpdocumentor-element-found-in__line">722</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add Page to Admin Menu.</p>
@@ -1563,7 +1722,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">310</span>
+    <span class="phpdocumentor-element-found-in__line">360</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add Form Button.</p>
@@ -1617,7 +1776,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">294</span>
+    <span class="phpdocumentor-element-found-in__line">344</span>
 </aside>
 
         <p class="phpdocumentor-summary">Bulk Add Form Buttons.</p>
@@ -1662,7 +1821,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">181</span>
+    <span class="phpdocumentor-element-found-in__line">202</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add Support for a Custom Field Type.</p>
@@ -1717,7 +1876,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">470</span>
+    <span class="phpdocumentor-element-found-in__line">545</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add Field.</p>
@@ -1771,7 +1930,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">454</span>
+    <span class="phpdocumentor-element-found-in__line">529</span>
 </aside>
 
         <p class="phpdocumentor-summary">Bulk Add Fields.</p>
@@ -1816,7 +1975,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">347</span>
+    <span class="phpdocumentor-element-found-in__line">453</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add Fields Group.</p>
@@ -1870,7 +2029,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">331</span>
+    <span class="phpdocumentor-element-found-in__line">437</span>
 </aside>
 
         <p class="phpdocumentor-summary">Bulk Add Page Fields Groups.</p>
@@ -1915,7 +2074,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">890</span>
+    <span class="phpdocumentor-element-found-in__line">985</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add Page Notice.</p>
@@ -1976,7 +2135,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">416</span>
+    <span class="phpdocumentor-element-found-in__line">397</span>
 </aside>
 
         <p class="phpdocumentor-summary">Add Page Section.</p>
@@ -2030,7 +2189,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">400</span>
+    <span class="phpdocumentor-element-found-in__line">381</span>
 </aside>
 
         <p class="phpdocumentor-summary">Bulk Add Page Sections.</p>
@@ -2075,7 +2234,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">863</span>
+    <span class="phpdocumentor-element-found-in__line">958</span>
 </aside>
 
         <p class="phpdocumentor-summary">Save Page Form Fields to WordPress Options.</p>
@@ -2163,7 +2322,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">853</span>
+    <span class="phpdocumentor-element-found-in__line">945</span>
 </aside>
 
         <p class="phpdocumentor-summary">Process Page Form Fields.</p>
@@ -2179,51 +2338,6 @@ ull]</span>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_brackets2id">
-        brackets2id()
-        <a href="classes/Do-Framework-Admin-Page.html#method_brackets2id" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1049</span>
-</aside>
-
-        <p class="phpdocumentor-summary">Convert &quot;brackets&quot; array key notation to field &quot;id&quot; notation.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">brackets2id</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$key</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -2287,7 +2401,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">751</span>
+    <span class="phpdocumentor-element-found-in__line">830</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get &amp; Build Form Fields.</p>
@@ -2376,7 +2490,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">614</span>
+    <span class="phpdocumentor-element-found-in__line">710</span>
 </aside>
 
         <p class="phpdocumentor-summary">Create Nonce Key.</p>
@@ -2455,7 +2569,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">926</span>
+    <span class="phpdocumentor-element-found-in__line">1021</span>
 </aside>
 
         <p class="phpdocumentor-summary">Delete All Page Notices.</p>
@@ -2471,51 +2585,6 @@ ull]</span>
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
     <span class="phpdocumentor-signature__response_type">self</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_dot2brackets">
-        dot2brackets()
-        <a href="classes/Do-Framework-Admin-Page.html#method_dot2brackets" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">1038</span>
-</aside>
-
-        <p class="phpdocumentor-summary">Convert &quot;dot&quot; array key notation to &quot;brackets&quot; notation.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">dot2brackets</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$key</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">string</span>
             &mdash;
             <section class="phpdocumentor-description"></section>
 
@@ -2579,7 +2648,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/Traits/Assets.php"><a href="files/includes-traits-assets.html"><abbr title="includes/Traits/Assets.php">Assets.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">124</span>
+    <span class="phpdocumentor-element-found-in__line">128</span>
 </aside>
 
         <p class="phpdocumentor-summary">Enqueue Script.</p>
@@ -2727,14 +2796,14 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1063</span>
+    <span class="phpdocumentor-element-found-in__line">1137</span>
 </aside>
 
         <p class="phpdocumentor-summary">Flatten Fields Input Array.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">flatten_input</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$arr</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$section</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ignoreNumericKeys</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$removeOriginal</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+                <span class="phpdocumentor-signature__name">flatten_input</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$arr</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -2746,32 +2815,6 @@ ull]</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$section</span>
-                : <span class="phpdocumentor-signature__argument__return-type">string</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">&#039;&#039;</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"></section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$ignoreNumericKeys</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Ignore arrays with numerical keys.</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$removeOriginal</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Remove original array key / value pairs.</p>
-</section>
 
             </dd>
             </dl>
@@ -2798,19 +2841,28 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1107</span>
+    <span class="phpdocumentor-element-found-in__line">1175</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get all pages registred fields.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">get_all_registred_fields</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$getFieldObject</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+            <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__name">get_all_registred_fields</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$pns</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">&#039;GLOBAL&#039;</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$getFieldObject</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
 
         <section class="phpdocumentor-description"></section>
 
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$pns</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">&#039;GLOBAL&#039;</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Pages Namespace</p>
+</section>
+
+            </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$getFieldObject</span>
                 : <span class="phpdocumentor-signature__argument__return-type">bool</span>
@@ -2843,7 +2895,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">725</span>
+    <span class="phpdocumentor-element-found-in__line">804</span>
 </aside>
 
         <p class="phpdocumentor-summary">Render page content based on page type.</p>
@@ -2911,7 +2963,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">984</span>
+    <span class="phpdocumentor-element-found-in__line">1083</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get a Form Field.</p>
@@ -2964,7 +3016,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">584</span>
+    <span class="phpdocumentor-element-found-in__line">680</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get Field Renderer Class by Field Type.</p>
@@ -3010,7 +3062,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1020</span>
+    <span class="phpdocumentor-element-found-in__line">1117</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get Field Value.</p>
@@ -3063,7 +3115,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">972</span>
+    <span class="phpdocumentor-element-found-in__line">1071</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get Form Fields.</p>
@@ -3108,7 +3160,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">959</span>
+    <span class="phpdocumentor-element-found-in__line">1058</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get Form Fields in JSON format.</p>
@@ -3142,7 +3194,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">999</span>
+    <span class="phpdocumentor-element-found-in__line">1096</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get Fields Values.</p>
@@ -3187,7 +3239,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">250</span>
+    <span class="phpdocumentor-element-found-in__line">288</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get Form Options.</p>
@@ -3221,7 +3273,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">228</span>
+    <span class="phpdocumentor-element-found-in__line">266</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get Page ID.</p>
@@ -3265,7 +3317,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/Traits/Assets.php"><a href="files/includes-traits-assets.html"><abbr title="includes/Traits/Assets.php">Assets.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">138</span>
+    <span class="phpdocumentor-element-found-in__line">146</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get parsed JSON from a file path / URL.</p>
@@ -3311,6 +3363,40 @@ ull]</span>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_get_namespace">
+        get_namespace()
+        <a href="classes/Do-Framework-Admin-Page.html#method_get_namespace" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1224</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get Page Namespace.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">get_namespace</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_get_nonce">
         get_nonce()
         <a href="classes/Do-Framework-Admin-Page.html#method_get_nonce" class="headerlink"><i class="fas fa-link"></i></a>
@@ -3318,7 +3404,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">599</span>
+    <span class="phpdocumentor-element-found-in__line">695</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get NONCE key.</p>
@@ -3352,7 +3438,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">911</span>
+    <span class="phpdocumentor-element-found-in__line">1006</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get Page Notices.</p>
@@ -3386,7 +3472,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">238</span>
+    <span class="phpdocumentor-element-found-in__line">276</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get Page Options.</p>
@@ -3420,7 +3506,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1094</span>
+    <span class="phpdocumentor-element-found-in__line">1161</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get Admin Page URL.</p>
@@ -3454,7 +3540,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">569</span>
+    <span class="phpdocumentor-element-found-in__line">665</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get Supported Field Types.</p>
@@ -3554,7 +3640,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">283</span>
+    <span class="phpdocumentor-element-found-in__line">333</span>
 </aside>
 
         <p class="phpdocumentor-summary">Page has a sidebar?</p>
@@ -3633,7 +3719,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">626</span>
+    <span class="phpdocumentor-element-found-in__line">233</span>
 </aside>
 
         <p class="phpdocumentor-summary">Initialize Page.</p>
@@ -3660,6 +3746,40 @@ ull]</span>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_is_backup">
+        is_backup()
+        <a href="classes/Do-Framework-Admin-Page.html#method_is_backup" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">321</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Check if current page type is of backup type.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">is_backup</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_is_form">
         is_form()
         <a href="classes/Do-Framework-Admin-Page.html#method_is_form" class="headerlink"><i class="fas fa-link"></i></a>
@@ -3667,7 +3787,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">271</span>
+    <span class="phpdocumentor-element-found-in__line">309</span>
 </aside>
 
         <p class="phpdocumentor-summary">Is current page type form?</p>
@@ -3746,7 +3866,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">818</span>
+    <span class="phpdocumentor-element-found-in__line">910</span>
 </aside>
 
         <p class="phpdocumentor-summary">Process Form Save Action.</p>
@@ -3780,7 +3900,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">874</span>
+    <span class="phpdocumentor-element-found-in__line">969</span>
 </aside>
 
         <p class="phpdocumentor-summary">Redirect back to referer URL.</p>
@@ -3825,7 +3945,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">707</span>
+    <span class="phpdocumentor-element-found-in__line">786</span>
 </aside>
 
         <p class="phpdocumentor-summary">Render Page.</p>
@@ -3859,7 +3979,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/Traits/Assets.php"><a href="files/includes-traits-assets.html"><abbr title="includes/Traits/Assets.php">Assets.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">154</span>
+    <span class="phpdocumentor-element-found-in__line">162</span>
 </aside>
 
         <p class="phpdocumentor-summary">Render WordPress Editor Markup.</p>
@@ -3913,6 +4033,40 @@ ull]</span>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_reset_to_defaults">
+        reset_to_defaults()
+        <a href="classes/Do-Framework-Admin-Page.html#method_reset_to_defaults" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">1234</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Reset page options to defaults.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">reset_to_defaults</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_set_fields_values">
         set_fields_values()
         <a href="classes/Do-Framework-Admin-Page.html#method_set_fields_values" class="headerlink"><i class="fas fa-link"></i></a>
@@ -3920,14 +4074,14 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">941</span>
+    <span class="phpdocumentor-element-found-in__line">1037</span>
 </aside>
 
         <p class="phpdocumentor-summary">Set Fields Values.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">set_fields_values</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                <span class="phpdocumentor-signature__name">set_fields_values</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$data</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$merge</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -3939,6 +4093,15 @@ ull]</span>
                  = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$merge</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Merge data with existing values.</p>
+</section>
 
             </dd>
             </dl>
@@ -3965,7 +4128,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">213</span>
+    <span class="phpdocumentor-element-found-in__line">254</span>
 </aside>
 
         <p class="phpdocumentor-summary">Setup admin page.</p>
@@ -4071,7 +4234,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1419</span>
+    <span class="phpdocumentor-element-found-in__line">1564</span>
 </aside>
 
         <p class="phpdocumentor-summary">Apply Page Notices.</p>
@@ -4098,6 +4261,41 @@ ull]</span>
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method__backup_form_submit">
+        _backup_form_submit()
+        <a href="classes/Do-Framework-Admin-Page.html#method__backup_form_submit" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">2096</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Intercept Backup Form Submit.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">_backup_form_submit</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"><p>This allows for importing fields by uploading a JSON file.</p>
+</section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method__can_save_form">
         _can_save_form()
         <a href="classes/Do-Framework-Admin-Page.html#method__can_save_form" class="headerlink"><i class="fas fa-link"></i></a>
@@ -4105,7 +4303,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1295</span>
+    <span class="phpdocumentor-element-found-in__line">1406</span>
 </aside>
 
         <p class="phpdocumentor-summary">Check if form save action is valid.</p>
@@ -4139,7 +4337,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1813</span>
+    <span class="phpdocumentor-element-found-in__line">1961</span>
 </aside>
 
         <p class="phpdocumentor-summary">Encode Fields as JSON.</p>
@@ -4184,7 +4382,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1675</span>
+    <span class="phpdocumentor-element-found-in__line">1823</span>
 </aside>
 
         <p class="phpdocumentor-summary">Render Activation Page Content.</p>
@@ -4233,7 +4431,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1633</span>
+    <span class="phpdocumentor-element-found-in__line">1779</span>
 </aside>
 
         <p class="phpdocumentor-summary">Render Backup Page Content.</p>
@@ -4267,7 +4465,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1538</span>
+    <span class="phpdocumentor-element-found-in__line">1684</span>
 </aside>
 
         <p class="phpdocumentor-summary">Render Dashboard Page Content.</p>
@@ -4301,7 +4499,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1570</span>
+    <span class="phpdocumentor-element-found-in__line">1716</span>
 </aside>
 
         <p class="phpdocumentor-summary">Render Demos Page Content.</p>
@@ -4335,7 +4533,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1699</span>
+    <span class="phpdocumentor-element-found-in__line">1847</span>
 </aside>
 
         <p class="phpdocumentor-summary">Render Form &amp; Fields Content.</p>
@@ -4380,7 +4578,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1601</span>
+    <span class="phpdocumentor-element-found-in__line">1747</span>
 </aside>
 
         <p class="phpdocumentor-summary">Render Plugins Page Content.</p>
@@ -4414,7 +4612,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1528</span>
+    <span class="phpdocumentor-element-found-in__line">1674</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get All Core &amp; Custom Field Types.</p>
@@ -4448,7 +4646,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1827</span>
+    <span class="phpdocumentor-element-found-in__line">1975</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get Form Buttons Array.</p>
@@ -4482,7 +4680,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1870</span>
+    <span class="phpdocumentor-element-found-in__line">2018</span>
 </aside>
 
         <p class="phpdocumentor-summary">Build &amp; Get Form Buttons.</p>
@@ -4516,7 +4714,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1765</span>
+    <span class="phpdocumentor-element-found-in__line">1913</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get &amp; Render Form Fields.</p>
@@ -4562,7 +4760,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1751</span>
+    <span class="phpdocumentor-element-found-in__line">1899</span>
 </aside>
 
         <p class="phpdocumentor-summary">Build &amp; Get Form Fields Groups.</p>
@@ -4596,7 +4794,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1732</span>
+    <span class="phpdocumentor-element-found-in__line">1880</span>
 </aside>
 
         <p class="phpdocumentor-summary">Build &amp; Get Form Sections.</p>
@@ -4623,6 +4821,112 @@ ull]</span>
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method__get_group_builder_options">
+        _get_group_builder_options()
+        <a href="classes/Do-Framework-Admin-Page.html#method__get_group_builder_options" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">2063</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get group builder options.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">_get_group_builder_options</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$section</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$section</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method__get_group_options">
+        _get_group_options()
+        <a href="classes/Do-Framework-Admin-Page.html#method__get_group_options" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">2049</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get group options.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">_get_group_options</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$section</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$section</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method__get_page_content_wrap">
         _get_page_content_wrap()
         <a href="classes/Do-Framework-Admin-Page.html#method__get_page_content_wrap" class="headerlink"><i class="fas fa-link"></i></a>
@@ -4630,7 +4934,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1479</span>
+    <span class="phpdocumentor-element-found-in__line">1624</span>
 </aside>
 
         <p class="phpdocumentor-summary">Render Page Wrapper.</p>
@@ -4664,7 +4968,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1443</span>
+    <span class="phpdocumentor-element-found-in__line">1588</span>
 </aside>
 
         <p class="phpdocumentor-summary">Render Page Notices.</p>
@@ -4698,7 +5002,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1384</span>
+    <span class="phpdocumentor-element-found-in__line">1529</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get server and software stats, then prepare them for rendering.</p>
@@ -4732,7 +5036,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1852</span>
+    <span class="phpdocumentor-element-found-in__line">2000</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get Form Button Save Name.</p>
@@ -4766,7 +5070,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1509</span>
+    <span class="phpdocumentor-element-found-in__line">1654</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get Panel Header Tabs.</p>
@@ -4800,7 +5104,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1255</span>
+    <span class="phpdocumentor-element-found-in__line">1366</span>
 </aside>
 
         <p class="phpdocumentor-summary">Init hooks.</p>
@@ -4834,7 +5138,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1153</span>
+    <span class="phpdocumentor-element-found-in__line">1244</span>
 </aside>
 
         <p class="phpdocumentor-summary">Begin setting up admin page.</p>
@@ -4878,7 +5182,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1319</span>
+    <span class="phpdocumentor-element-found-in__line">1430</span>
 </aside>
 
         <p class="phpdocumentor-summary">Process post data before saving.</p>
@@ -4912,7 +5216,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1800</span>
+    <span class="phpdocumentor-element-found-in__line">1948</span>
 </aside>
 
         <p class="phpdocumentor-summary">Sanitize Field before JSON encoding.</p>
@@ -4950,6 +5254,51 @@ ull]</span>
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method__sanitize_values_recursive">
+        _sanitize_values_recursive()
+        <a href="classes/Do-Framework-Admin-Page.html#method__sanitize_values_recursive" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">2167</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Sanitize array values recursively.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">_sanitize_values_recursive</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$values</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method__save_fields">
         _save_fields()
         <a href="classes/Do-Framework-Admin-Page.html#method__save_fields" class="headerlink"><i class="fas fa-link"></i></a>
@@ -4957,7 +5306,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1355</span>
+    <span class="phpdocumentor-element-found-in__line">1499</span>
 </aside>
 
         <p class="phpdocumentor-summary">Save fields &amp; trigger relevant hooks.</p>
@@ -4984,6 +5333,51 @@ ull]</span>
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method__set_namespace">
+        _set_namespace()
+        <a href="classes/Do-Framework-Admin-Page.html#method__set_namespace" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">2078</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Set Page Namespace.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">_set_namespace</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$ns</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">bool</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$ns</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">bool</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method__set_options">
         _set_options()
         <a href="classes/Do-Framework-Admin-Page.html#method__set_options" class="headerlink"><i class="fas fa-link"></i></a>
@@ -4991,7 +5385,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1207</span>
+    <span class="phpdocumentor-element-found-in__line">1275</span>
 </aside>
 
         <p class="phpdocumentor-summary">Configure page with given options.</p>
@@ -5036,7 +5430,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1281</span>
+    <span class="phpdocumentor-element-found-in__line">1392</span>
 </aside>
 
         <p class="phpdocumentor-summary">Setup page hooks.</p>
@@ -5070,7 +5464,7 @@ ull]</span>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-admin-page.php"><a href="files/includes-class-do-framework-admin-page.html"><abbr title="includes/class-do-framework-admin-page.php">class-do-framework-admin-page.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">1183</span>
+    <span class="phpdocumentor-element-found-in__line">1343</span>
 </aside>
 
         <p class="phpdocumentor-summary">Begin setting up admin page.</p>

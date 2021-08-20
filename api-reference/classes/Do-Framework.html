@@ -231,6 +231,34 @@ WordPress and to define internationalization functionality.</dd>
 <dd>Retrieve the version number of the plugin.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Do-Framework.html#method_handle_debug_buffer_end">handle_debug_buffer_end()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>End buffer at WordPress footer.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Do-Framework.html#method_handle_debug_buffer_filter">handle_debug_buffer_filter()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Handle WordPress buffer for DOFW debugger.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Do-Framework.html#method_handle_debug_buffer_start">handle_debug_buffer_start()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Start buffer at WordPress header.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/Do-Framework.html#method_handle_debug_wp_shutdown">handle_debug_wp_shutdown()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Handle WordPress shutdown hook for the debugger.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Do-Framework.html#method_run">run()</a>
     <span>
                         &nbsp;: mixed    </span>
@@ -244,6 +272,13 @@ WordPress and to define internationalization functionality.</dd>
 </dt>
 <dd>Register all of the hooks related to the admin area functionality
 of the plugin.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -private">
+    <a href="classes/Do-Framework.html#method_define_debug_hook">define_debug_hook()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Register debugger shutdown hook.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -private">
     <a href="classes/Do-Framework.html#method_load_dependencies">load_dependencies()</a>
@@ -578,7 +613,7 @@ the public-facing side of the site.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework.php"><a href="files/includes-class-do-framework.html"><abbr title="includes/class-do-framework.php">class-do-framework.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">205</span>
+    <span class="phpdocumentor-element-found-in__line">281</span>
 </aside>
 
         <p class="phpdocumentor-summary">The reference to the class that orchestrates the hooks with the plugin.</p>
@@ -628,7 +663,7 @@ the public-facing side of the site.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework.php"><a href="files/includes-class-do-framework.html"><abbr title="includes/class-do-framework.php">class-do-framework.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">194</span>
+    <span class="phpdocumentor-element-found-in__line">270</span>
 </aside>
 
         <p class="phpdocumentor-summary">The name of the plugin used to uniquely identify it within the context of
@@ -679,7 +714,7 @@ WordPress and to define internationalization functionality.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework.php"><a href="files/includes-class-do-framework.html"><abbr title="includes/class-do-framework.php">class-do-framework.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">216</span>
+    <span class="phpdocumentor-element-found-in__line">292</span>
 </aside>
 
         <p class="phpdocumentor-summary">Retrieve the version number of the plugin.</p>
@@ -722,6 +757,152 @@ WordPress and to define internationalization functionality.</p>
             -public
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_handle_debug_buffer_end">
+        handle_debug_buffer_end()
+        <a href="classes/Do-Framework.html#method_handle_debug_buffer_end" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework.php"><a href="files/includes-class-do-framework.html"><abbr title="includes/class-do-framework.php">class-do-framework.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">133</span>
+</aside>
+
+        <p class="phpdocumentor-summary">End buffer at WordPress footer.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">handle_debug_buffer_end</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_handle_debug_buffer_filter">
+        handle_debug_buffer_filter()
+        <a href="classes/Do-Framework.html#method_handle_debug_buffer_filter" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework.php"><a href="files/includes-class-do-framework.html"><abbr title="includes/class-do-framework.php">class-do-framework.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">107</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Handle WordPress buffer for DOFW debugger.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">handle_debug_buffer_filter</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$buffer</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$buffer</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_handle_debug_buffer_start">
+        handle_debug_buffer_start()
+        <a href="classes/Do-Framework.html#method_handle_debug_buffer_start" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework.php"><a href="files/includes-class-do-framework.html"><abbr title="includes/class-do-framework.php">class-do-framework.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">123</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Start buffer at WordPress header.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">handle_debug_buffer_start</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_handle_debug_wp_shutdown">
+        handle_debug_wp_shutdown()
+        <a href="classes/Do-Framework.html#method_handle_debug_wp_shutdown" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework.php"><a href="files/includes-class-do-framework.html"><abbr title="includes/class-do-framework.php">class-do-framework.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">143</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Handle WordPress shutdown hook for the debugger.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">handle_debug_wp_shutdown</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_run">
         run()
         <a href="classes/Do-Framework.html#method_run" class="headerlink"><i class="fas fa-link"></i></a>
@@ -729,7 +910,7 @@ WordPress and to define internationalization functionality.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework.php"><a href="files/includes-class-do-framework.html"><abbr title="includes/class-do-framework.php">class-do-framework.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">180</span>
+    <span class="phpdocumentor-element-found-in__line">249</span>
 </aside>
 
         <p class="phpdocumentor-summary">Run the loader to execute all of the hooks with WordPress.</p>
@@ -778,7 +959,7 @@ WordPress and to define internationalization functionality.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework.php"><a href="files/includes-class-do-framework.html"><abbr title="includes/class-do-framework.php">class-do-framework.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">163</span>
+    <span class="phpdocumentor-element-found-in__line">232</span>
 </aside>
 
         <p class="phpdocumentor-summary">Register all of the hooks related to the admin area functionality
@@ -830,6 +1011,64 @@ of the plugin.</p>
             -private
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method_define_debug_hook">
+        define_debug_hook()
+        <a href="classes/Do-Framework.html#method_define_debug_hook" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework.php"><a href="files/includes-class-do-framework.html"><abbr title="includes/class-do-framework.php">class-do-framework.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">218</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Register debugger shutdown hook.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">private</span>
+                <span class="phpdocumentor-signature__name">define_debug_hook</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">since</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                            <span class="phpdocumentor-tag-link">1.9.5</span>
+                                                                                
+                                                 <section class="phpdocumentor-description"></section>
+
+                                    </dd>
+                                                <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">access</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                
+                                                 <section class="phpdocumentor-description"><p>private</p>
+</section>
+
+                                    </dd>
+                        </dl>
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -private
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method_load_dependencies">
         load_dependencies()
         <a href="classes/Do-Framework.html#method_load_dependencies" class="headerlink"><i class="fas fa-link"></i></a>
@@ -837,7 +1076,7 @@ of the plugin.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework.php"><a href="files/includes-class-do-framework.html"><abbr title="includes/class-do-framework.php">class-do-framework.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">116</span>
+    <span class="phpdocumentor-element-found-in__line">172</span>
 </aside>
 
         <p class="phpdocumentor-summary">Load the required dependencies for this plugin.</p>
@@ -904,7 +1143,7 @@ with WordPress.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework.php"><a href="files/includes-class-do-framework.html"><abbr title="includes/class-do-framework.php">class-do-framework.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">148</span>
+    <span class="phpdocumentor-element-found-in__line">204</span>
 </aside>
 
         <p class="phpdocumentor-summary">Define the locale for this plugin for internationalization.</p>
