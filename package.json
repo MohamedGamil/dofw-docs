@@ -8,7 +8,7 @@
   },
   "scripts": {
     "release": "./scripts/release.sh",
-    "serve": "http-server"
+    "serve": "php -S 127.0.0.1:8080"
   },
   "repository": {
     "type": "git",
