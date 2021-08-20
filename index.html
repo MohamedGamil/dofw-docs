@@ -433,7 +433,7 @@
                                 'id' => 'example_form',
 
                                 // My settings pages namespace
-                                'namespace' => 'Example_Namespace'
+                                'namespace' => 'My_Namespace'
 
                                 // Enable adding the page to the side-menu or hide it instead.
                                 'menu_enabled' => true,
@@ -2921,8 +2921,10 @@
 
                         <p>
                             DOFW provides a class which can be extended and re-used to quickly and cleanly implement your options and page.
-                            <br> It uses the same class to provide a default demo of DOFW features, but also it is quite extensible.
-                            <br> To re-use this class, follow these steps:
+                            <br><br>
+                            It uses the same class to provide a default demo of DOFW features, but also it is quite extensible.
+                            <br>
+                            To re-use this class, follow these steps:
                         </p>
                         
                         <p>
@@ -2934,6 +2936,7 @@
                         <pre class="brush: php">
                             class My_Custom_Options extends Do_Framework_Default_Pages
                             {
+                                const NAMESPACE = 'My_Namespace';
                                 const ENABLE_PAGES = true;
                                 const ENABLE_DEMOS = true;
                                 const ENABLE_PLUGINS = true;
@@ -3199,6 +3202,9 @@
                         <pre class="brush: php">
                             class My_Custom_Options extends Do_Framework_Default_Pages
                             {
+                                // Sets the default namespace for all your pages added using this class
+                                const NAMESPACE = 'My_Namespace';
+
                                 // Enable / disable adding pages using pages configuration, that is "static::CONFIG"
                                 const ENABLE_PAGES = true;
 
