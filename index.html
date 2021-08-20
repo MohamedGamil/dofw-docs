@@ -3,7 +3,7 @@
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!-->
-<html lang="en" class="">
+<html lang="en" class="dark">
 <!--<![endif]-->
 
 <head>
@@ -66,7 +66,7 @@
         }
 
         document.addEventListener("DOMContentLoaded", () => {
-            document.querySelector('#mode').addEventListener('click',()=>{
+            document.querySelector('#mode').addEventListener('click',() => {
                 document.querySelector('html').classList.toggle('dark');
             })
         });
@@ -187,9 +187,11 @@
 
                                         <hr>
                                         <div>
-                                            <p>First and foremost, thank you so much for purchasing this plugin and for joining our Dedulab family.
+                                            <p>
+                                                First and foremost, thank you so much for purchasing this plugin and for joining our Dedulab family.
                                                 <strong>You are awesome!</strong>
-                                                <br> You are entitled to get free lifetime updates to this plugin.
+                                                <br> <br> 
+                                                You are entitled to get <strong>free lifetime updates for this plugin</strong>.
                                             </p>
 
                                             <p>This documentation is here to help you regarding each step of customization. Please go through the documentation carefully to understand how this plugin is made and how to use it properly. Basic HTML, CSS, and PHP knowledge is required to customize this plugin. You may learn basics <a href="http://www.w3schools.com/" target="_blank">here</a>, <a href="https://developer.mozilla.org/" target="_blank">here</a> and <a href="http://learn.shayhowe.com/html-css/building-your-first-web-page/" target="_blank">here</a>. </p>
@@ -288,6 +290,20 @@
                                 </div>
                             </div>
                         </div>
+                        
+                        <hr>
+
+                        <h4>Use the plugin right away.</h4>
+                        <p>
+                            After installing the plugin normally using WordPress plugins management interface, you can start using it with your own themes or plugins right away with no need to include it within your own codebase.
+                            <br><br>
+                            <strong>But keep in mind you must emphasize to your end-users that DOFW is a required peer plugin in order for your code to work properly.</strong>
+                        </p>
+
+                        <blockquote>
+                            <strong>Please note</strong>, since version <code>1.9.0</code> DO options framework requires <code>PHP 5.6</code> or later to work without issues, <strong>we highly recommend</strong> using <code>PHP 7.1</code> or later.
+                        </blockquote>
+
                         <hr>
 
                         <h4>Need help?</h4>
@@ -310,8 +326,52 @@
                         </div>
                         <!-- end row -->
 
-                        <h4>First, include the autoload file</h4>
-                        <p>Wether you're using DOFW with another plugin or a theme, you must first include the plugin <code>autoload.php</code> file before proceeding with using its functionality.</p>
+                        <h4>Using Composer</h4>
+                        <p>
+                            Since version <code>1.9.0</code> DOFW supports being used as a vendor package using Composer package manager, this makes things much easier to add DOFW to your own plugin or theme if you're already using Composer.
+                            <br><br>
+                            Here is how to add DOFW to your composer requirements:
+                            <br>
+                            First, add <code>"dedulab/do-framework": "*"</code> to your <code>composer.json</code> file, and inside the <code>"require"</code> section.
+                        </p>
+                        <pre class="brush: javascript; highlight: [4]">
+                            {
+                                "require": {
+                                    "php": ">=5.6.0",
+                                    "dedulab/do-framework": "*"
+                                }
+                            }
+                        </pre>
+                        <br>
+
+                        <p>
+                            Then, after downloading DOFW source code and storing it somewhere on your local machine, add the following code to your <code>composer.json</code> file, in order to allow composer to correctly resolve DOFW pacakge and add it to your vendors directory.
+                        </p>
+                        <pre class="brush: javascript; highlight: [3, 4, 5, 6, 7, 8, 9]">
+                            {
+                                "repositories": {
+                                    "do-framework": {
+                                      "type": "path",
+                                      "url": "path/to/do-framework",
+                                      "options": {
+                                          "symlink": false
+                                      }
+                                    }
+                                }
+                            }
+                        </pre>
+                        <hr>
+
+                        <h4>Directly including the plugin</h4>
+                        <p>
+                            Alternatively, you may also add DOFW directly to your own source code without any concerns that it will interfere with other versions of the plugin being used elsewhere within the same WordPress installation.
+                            <br>
+                            But also keep in mind that if the plugin already installed and activated using WordPress plugin manager, that version will take precedence over all other versions of the plugin used anywhere else.
+                        </p>
+
+                        <p>
+                            To directly include the plugin within your code, you must require plugin's <code>autoload.php</code> at the earliest point of your code execution.
+                        </p>
                         <pre class="brush: php; highlight: [1]">
                             require_once('path/to/dofw/autoload.php');
                         </pre>
@@ -341,7 +401,7 @@
                         </pre>
 
                         <p>
-                            After adding DOFW files to your plugin make sure to require or include the plugin <code>autoload.php</code> at the top of your plugin front controller, in this example it is <code>my_plugin.php</code>.
+                            After adding DOFW files to your plugin make sure to require or include the plugin <code>autoload.php</code> at the top of your plugin front controller, <code>my_plugin.php</code> in this example.
                         </p>
 
                         <p>
@@ -367,11 +427,14 @@
                             <br> To add a new form page, specify the page type parameter to <code>form</code>, 
                             <br> here is an example:
                         </p>
-                        <pre class="brush: php; highlight: [20,21]">
+                        <pre class="brush: php; highlight: [5,6,23,24]">
                             $adminPage = dofw_admin_page([
                                 // Page ID (Used later to access page instnace)
                                 'id' => 'example_form',
-                                
+
+                                // My settings pages namespace
+                                'namespace' => 'Example_Namespace'
+
                                 // Enable adding the page to the side-menu or hide it instead.
                                 'menu_enabled' => true,
 
@@ -397,7 +460,7 @@
                                 'position' => 2,
 
                                 // Menu Icon
-                                'icon' => DOFW_IMAGES_URL . 'dedulab.svg',
+                                'icon' => 'http://mydomain.com/path/to/menu/icon.svg',
 
                                 // Required user capability to view this page
                                 'capability' => 'manage_options',
@@ -434,6 +497,12 @@
                                 <code>activation</code>: Activation page.
                             </li>
                         </ul>
+                        <hr>
+
+                        <h4>Use admin page namespace:</h4>
+                        <p>
+                            Since version <code>1.9.5</code> it is highly recommended to assign a common value of the <code>namespace</code> option for all your added admin pages, this will keep your admin pages and their options separate from any other pages that may have been registered elsewhere, which will allow DOFW to correctly generate and import backups of all your admin pages options.
+                        </p>
                         <hr>
 
                         <h4>API Reference:</h4>
@@ -575,6 +644,56 @@
                                 ],
                             ]);
                         </pre>
+                        <hr>
+
+                        <h4>Creating Group Fields Builder:</h4>
+                        <p>
+                            Since version <code>1.9.5</code> DOFW supports creating fields builders, which helps create options for repeated sections in your front-end, to activate the builder options for your fields group, take a look the following example:
+                        </p>
+                        <pre class="brush: php; highlight: [11]">
+                            // Get page instance
+                            $pageInstance = dofw_get_page('example_form');
+
+                            // Adding a builder group
+                            $pageInstance->add_group( 'builder_example', [
+                                'icon' => 'cog',
+                                'section' => 'page-section',
+                                'title' => __('Example Group Builder', 'do-framework'),
+                                
+                                // Activates the builder options for this group
+                                'builder' => true,
+                            ]);
+
+                            // Adding fields to the builder group
+                            $pageInstance->add_fields([
+                                [
+                                    // Changes to a text field with the ID or name = `name`
+                                    // affects each section name in builder groups.
+                                    'id' => 'name',
+                                    'type' => 'text',
+                                    'section' => 'page-section',
+                                    'group' => 'builder_example',
+                                    'label' => __('Builder Name', 'do-framework'),
+                                ],
+                                [
+                                    // Changes to a file field with the ID or name = `image`
+                                    // affects each section image in builder groups.
+                                    'id' => 'image',
+                                    'type' => 'file',
+                                    'section' => 'page-section',
+                                    'group' => 'builder_example',
+                                    'label' => __('Builder Image', 'do-framework'),
+                                ],
+                                [
+                                    'id' => 'color',
+                                    'type' => 'color',
+                                    'section' => 'page-section',
+                                    'group' => 'builder_example',
+                                    'label' => __('Builder Color', 'do-framework'),
+                                ],
+                            ]);
+                        </pre>
+                        <hr>
 
                         <h4> Here are all the available group configuration parameters: </h4>
                         <pre class="brush: php">
@@ -593,6 +712,27 @@
 
                                 // Default group toggle state (Is hidden or displayed), "true" by default
                                 'open' => true,
+
+                                // Activates builder options for this group (Since v1.9.5)
+                                'builder' => true,
+
+                                // Builder group configuration (Since v1.9.5)
+                                'builder_options' => array(
+                                    // Builder option name (As saved in the database for later use, defaults to group ID)
+                                    'name' => 'group1_id',
+
+                                    // Builder add new label text
+                                    'label' => __('Add new section', 'do-framework'),
+
+                                    // Builder add new button text
+                                    'button' => __('Add new', 'do-framework'),
+
+                                    // Builder's sections name field
+                                    'name_field' => 'name',
+
+                                    // Builder's sections image field
+                                    'image_field' => 'image',
+                                ),
                             ]);
                         </pre>
 
@@ -689,6 +829,10 @@
                             $pageInstance->add_field( 'field1_id', [
                                 // Field type (Check below to see available field types)
                                 'type' => '',
+
+                                // Field ID. Optional if you passed the ID 
+                                // as the first argument to the `add_field()` method.
+                                'id' => 'field1_id',
                                 
                                 // Parent Section ID
                                 'section' => '__default',
@@ -2356,16 +2500,17 @@
 
                         <pre class="brush: php; highlight: [5,11]">
                             // Use the `dofw()` function to quickly get access to DOFW front controller,
-                            // then use the `get_field_value()` method by passing to it your section and field ID, 
-                            // and an optional field value for the first and second parameters respectively.
+                            // then use the `get_field_value()` method by passing to it your page ID and field ID, 
+                            // and an optional default field value for the first and second arguments respectively.
 
-                            dofw()->get_field_value( 'SECTION_ID.MY_FIELD_ID', 'default_value' );
+                            dofw()->get_field_value( 'PAGE_ID.MY_FIELD_ID', 'default_value' );
                             
-                            // By default your field name is your field ID, prefixed by its parent section ID.
-                            // If you provided a custom `name` to you field definition, you can use it 
-                            // to retrieve your field value right away without field's section id
 
-                            dofw()->get_field_value( 'MY_FIELD_NAME', 'default_value' );
+                            // By default your field name is your field ID, prefixed by its parent page ID.
+                            // If you provided a custom `name` to you field definition, 
+                            // you must use it to get the field value.
+
+                            dofw()->get_field_value( 'PAGE_ID.MY_CUSTOM_FIELD_NAME', 'default_value' );
                         </pre>
                         <hr>
 
@@ -3256,7 +3401,7 @@
                         <div class="row">
                             <div class="col-md-12">
 
-                                <p>Once again, thank you so much for purchasing this plugin. As I said at the beginning, I'd be glad to help you if you have any questions relating to this plugin. No guarantees, but I'll do my best to assist.</p>
+                                <p>Once again, thank you so much for purchasing this plugin. We'd be glad to help you if you have any questions relating to this plugin. No guarantees, but we'll do our best to assist.</p>
 
                                 <hr>
 
