@@ -240,14 +240,7 @@
 </dt>
 <dd>Supported File Modes.</dd>
 
-                <dt class="phpdocumentor-table-of-contents__entry -property -public">
-    <a href="classes/DOFW-Fields-File.html#property__DID_LOAD">$_DID_LOAD</a>
-    <span>
-                &nbsp;: bool            </span>
-</dt>
-<dd>Did Load WordPress Media State.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+                <dt class="phpdocumentor-table-of-contents__entry -property -protected">
     <a href="classes/Do-Framework-Field.html#property__classes">$_classes</a>
     <span>
                 &nbsp;: array&lt;string|int, mixed&gt;            </span>
@@ -325,7 +318,7 @@
 <dd>Field Base Validation Rules.</dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/DOFW-Fields-File.html#method___construct">__construct()</a>
+    <a href="classes/Do-Framework-Field.html#method___construct">__construct()</a>
     <span>
                         &nbsp;: self    </span>
 </dt>
@@ -521,13 +514,6 @@
 <dd>Get Admin JavaScript Asset URL.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/DOFW-Fields-File.html#method_load_media">load_media()</a>
-    <span>
-                        &nbsp;: void    </span>
-</dt>
-<dd>Load WordPress Media.</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
     <a href="classes/Do-Framework-Field.html#method_prepare_value">prepare_value()</a>
     <span>
                         &nbsp;: mixed    </span>
@@ -610,6 +596,13 @@
                         &nbsp;: string    </span>
 </dt>
 <dd>End Render (Field Wrap).</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/Do-Framework-Field.html#method__get_active_admin_page">_get_active_admin_page()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Get currently active admin page.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
     <a href="classes/Do-Framework-Field.html#method__init">_init()</a>
@@ -908,38 +901,6 @@
             Properties
             <a href="classes/DOFW-Fields-File.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
-                    <article
-        class="
-            phpdocumentor-element
-            -property
-            -public
-            -static                                            "
->
-    <h4 class="phpdocumentor-element__name" id="property__DID_LOAD">
-        $_DID_LOAD
-        <a href="classes/DOFW-Fields-File.html#property__DID_LOAD" class="headerlink"><i class="fas fa-link"></i></a>
-        <span class="phpdocumentor-element__modifiers">
-                                </span>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="includes/Fields/File.php"><a href="files/includes-fields-file.html"><abbr title="includes/Fields/File.php">File.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">58</span>
-</aside>
-
-        <p class="phpdocumentor-summary">Did Load WordPress Media State.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-    <span class="phpdocumentor-signature__static">static</span>    <span class="phpdocumentor-signature__type">bool</span>
-    <span class="phpdocumentor-signature__name">$_DID_LOAD</span>
-     = <span class="phpdocumentor-signature__default-value">false</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-
-</article>
                     <article
         class="
             phpdocumentor-element
@@ -1310,19 +1271,19 @@ ull</span></code>
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/DOFW-Fields-File.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/Do-Framework-Field.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="includes/Fields/File.php"><a href="files/includes-fields-file.html"><abbr title="includes/Fields/File.php">File.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-field.php"><a href="files/includes-class-do-framework-field.html"><abbr title="includes/class-do-framework-field.php">class-do-framework-field.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">60</span>
+    <span class="phpdocumentor-element-found-in__line">165</span>
 </aside>
 
         <p class="phpdocumentor-summary">Class Constructor.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rules</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$rules</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
         <section class="phpdocumentor-description"></section>
 
@@ -1330,7 +1291,7 @@ ull</span></code>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$id</span>
-                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                     <section class="phpdocumentor-description"></section>
@@ -2181,7 +2142,7 @@ ull</span></code>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/Fields/File.php"><a href="files/includes-fields-file.html"><abbr title="includes/Fields/File.php">File.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">76</span>
+    <span class="phpdocumentor-element-found-in__line">58</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get Field Mode.</p>
@@ -2215,7 +2176,7 @@ ull</span></code>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/Fields/File.php"><a href="files/includes-fields-file.html"><abbr title="includes/Fields/File.php">File.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">101</span>
+    <span class="phpdocumentor-element-found-in__line">69</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get Field Options.</p>
@@ -2523,40 +2484,6 @@ ull</span></code>
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_load_media">
-        load_media()
-        <a href="classes/DOFW-Fields-File.html#method_load_media" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="includes/Fields/File.php"><a href="files/includes-fields-file.html"><abbr title="includes/Fields/File.php">File.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">92</span>
-</aside>
-
-        <p class="phpdocumentor-summary">Load WordPress Media.</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">load_media</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
-
-        <section class="phpdocumentor-description"></section>
-
-    
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">void</span>
-            &mdash;
-            <section class="phpdocumentor-description"></section>
-
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
     <h4 class="phpdocumentor-element__name" id="method_prepare_value">
         prepare_value()
         <a href="classes/Do-Framework-Field.html#method_prepare_value" class="headerlink"><i class="fas fa-link"></i></a>
@@ -2609,7 +2536,7 @@ ull</span></code>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/Fields/File.php"><a href="files/includes-fields-file.html"><abbr title="includes/Fields/File.php">File.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">151</span>
+    <span class="phpdocumentor-element-found-in__line">119</span>
 </aside>
 
         <p class="phpdocumentor-summary">Render Field and return its HTML.</p>
@@ -3138,6 +3065,40 @@ ull</span></code>
             -protected
                                                         "
 >
+    <h4 class="phpdocumentor-element__name" id="method__get_active_admin_page">
+        _get_active_admin_page()
+        <a href="classes/Do-Framework-Field.html#method__get_active_admin_page" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="includes/class-do-framework-field.php"><a href="files/includes-class-do-framework-field.html"><abbr title="includes/class-do-framework-field.php">class-do-framework-field.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">636</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get currently active admin page.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">_get_active_admin_page</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">string</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
     <h4 class="phpdocumentor-element__name" id="method__init">
         _init()
         <a href="classes/Do-Framework-Field.html#method__init" class="headerlink"><i class="fas fa-link"></i></a>
@@ -3213,7 +3174,7 @@ ull</span></code>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/Fields/File.php"><a href="files/includes-fields-file.html"><abbr title="includes/Fields/File.php">File.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">172</span>
+    <span class="phpdocumentor-element-found-in__line">140</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get Valid File Uploader Options.</p>

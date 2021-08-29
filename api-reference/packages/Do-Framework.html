@@ -138,11 +138,39 @@
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
+    <a href="namespaces/default.html#function_dofw_get_active_admin_page">dofw_get_active_admin_page()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Get current active admin page ID.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -function -">
+    <a href="namespaces/default.html#function_dofw_active_namespace">dofw_active_namespace()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Get Active Namespace.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -function -">
+    <a href="namespaces/default.html#function_dofw_panel_config">dofw_panel_config()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;|void    </span>
+</dt>
+<dd>Get / Set panel configuration.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_dofw_current_namespace">dofw_current_namespace()</a>
     <span>
                         &nbsp;: string    </span>
 </dt>
 <dd>Get / Set Current Default Namespace.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -function -">
+    <a href="namespaces/default.html#function_dofw_panel_version">dofw_panel_version()</a>
+    <span>
+                        &nbsp;: string    </span>
+</dt>
+<dd>Get / Set panel version.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_dofw_get_page_url">dofw_get_page_url()</a>
@@ -222,6 +250,13 @@
 <dd>Get an instance of DO Framework Data Helper.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
+    <a href="namespaces/default.html#function_dofw_google_fonts">dofw_google_fonts()</a>
+    <span>
+                        &nbsp;: array&lt;string|int, mixed&gt;    </span>
+</dt>
+<dd>Get a list of Google Fonts.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_dofw_logo">dofw_logo()</a>
     <span>
                         &nbsp;: string|void    </span>
@@ -292,6 +327,27 @@
 <dd>Initialize default plugin pages.</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -function -">
+    <a href="namespaces/default.html#function_dofw_get_field_value">dofw_get_field_value()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Get Field Value.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -function -">
+    <a href="namespaces/default.html#function_dofw_disable_demo">dofw_disable_demo()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Disable plugin&#039;s demo.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -function -">
+    <a href="namespaces/default.html#function_dofw_init_demo">dofw_init_demo()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>Initialize plugin&#039;s demo.</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -function -">
     <a href="namespaces/default.html#function_dofw_init">dofw_init()</a>
     <span>
                         &nbsp;: void    </span>
@@ -343,7 +399,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="do-framework.php"><a href="files/do-framework.html"><abbr title="do-framework.php">do-framework.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">42</span>
+    <span class="phpdocumentor-element-found-in__line">48</span>
 </aside>
 
         <p class="phpdocumentor-summary">The code that runs during plugin activation.</p>
@@ -368,7 +424,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="do-framework.php"><a href="files/do-framework.html"><abbr title="do-framework.php">do-framework.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">52</span>
+    <span class="phpdocumentor-element-found-in__line">59</span>
 </aside>
 
         <p class="phpdocumentor-summary">The code that runs during plugin deactivation.</p>
@@ -434,6 +490,88 @@
     
 </article>
                     <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_dofw_get_active_admin_page">
+        dofw_get_active_admin_page()
+        <a href="namespaces/default.html#function_dofw_get_active_admin_page" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">49</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get current active admin page ID.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">dofw_get_active_admin_page</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_dofw_active_namespace">
+        dofw_active_namespace()
+        <a href="namespaces/default.html#function_dofw_active_namespace" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">68</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get Active Namespace.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">dofw_active_namespace</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_dofw_panel_config">
+        dofw_panel_config()
+        <a href="namespaces/default.html#function_dofw_panel_config" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">83</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get / Set panel configuration.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">dofw_panel_config</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$config</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$config</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_dofw_current_namespace">
         dofw_current_namespace()
         <a href="namespaces/default.html#function_dofw_current_namespace" class="headerlink"><i class="fas fa-link"></i></a>
@@ -441,7 +579,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">50</span>
+    <span class="phpdocumentor-element-found-in__line">103</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get / Set Current Default Namespace.</p>
@@ -469,6 +607,41 @@
     
 </article>
                     <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_dofw_panel_version">
+        dofw_panel_version()
+        <a href="namespaces/default.html#function_dofw_panel_version" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">124</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get / Set panel version.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">dofw_panel_version</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$version</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">string</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$version</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_dofw_get_page_url">
         dofw_get_page_url()
         <a href="namespaces/default.html#function_dofw_get_page_url" class="headerlink"><i class="fas fa-link"></i></a>
@@ -476,7 +649,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">70</span>
+    <span class="phpdocumentor-element-found-in__line">144</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get Admin Page URL.</p>
@@ -518,7 +691,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">91</span>
+    <span class="phpdocumentor-element-found-in__line">165</span>
 </aside>
 
         <p class="phpdocumentor-summary">Force Download JSON as a file.</p>
@@ -569,7 +742,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">115</span>
+    <span class="phpdocumentor-element-found-in__line">189</span>
 </aside>
 
         <p class="phpdocumentor-summary">Is activation enabled?</p>
@@ -593,7 +766,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">133</span>
+    <span class="phpdocumentor-element-found-in__line">207</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get Activation Page.</p>
@@ -629,7 +802,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">155</span>
+    <span class="phpdocumentor-element-found-in__line">229</span>
 </aside>
 
         <p class="phpdocumentor-summary">Check if a plugin is installed by plugin slug.</p>
@@ -664,7 +837,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">172</span>
+    <span class="phpdocumentor-element-found-in__line">246</span>
 </aside>
 
         <p class="phpdocumentor-summary">Check if a plugin is activated by plugin slug.</p>
@@ -698,7 +871,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">191</span>
+    <span class="phpdocumentor-element-found-in__line">265</span>
 </aside>
 
         <p class="phpdocumentor-summary">Check if a given value is empty.</p>
@@ -741,7 +914,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">217</span>
+    <span class="phpdocumentor-element-found-in__line">291</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get an instance of DO Framework Activation Helper.</p>
@@ -765,7 +938,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">236</span>
+    <span class="phpdocumentor-element-found-in__line">310</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get an instance of DO Framework Activation Helper.</p>
@@ -789,7 +962,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">251</span>
+    <span class="phpdocumentor-element-found-in__line">325</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get an instance of DO Framework Stats Helper.</p>
@@ -813,7 +986,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">266</span>
+    <span class="phpdocumentor-element-found-in__line">340</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get an instance of DO Framework Data Helper.</p>
@@ -830,6 +1003,49 @@
     
 </article>
                     <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_dofw_google_fonts">
+        dofw_google_fonts()
+        <a href="namespaces/default.html#function_dofw_google_fonts" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">357</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get a list of Google Fonts.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">dofw_google_fonts</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$as_options</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">true</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$include</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$as_options</span>
+                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">true</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$include</span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_dofw_logo">
         dofw_logo()
         <a href="namespaces/default.html#function_dofw_logo" class="headerlink"><i class="fas fa-link"></i></a>
@@ -837,7 +1053,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">282</span>
+    <span class="phpdocumentor-element-found-in__line">373</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get / Set Control Panel Logo.</p>
@@ -873,7 +1089,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">304</span>
+    <span class="phpdocumentor-element-found-in__line">395</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get / Set Primary Panel Title.</p>
@@ -909,7 +1125,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">327</span>
+    <span class="phpdocumentor-element-found-in__line">418</span>
 </aside>
 
         <p class="phpdocumentor-summary">Resolve Asset URL.</p>
@@ -953,7 +1169,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">356</span>
+    <span class="phpdocumentor-element-found-in__line">447</span>
 </aside>
 
         <p class="phpdocumentor-summary">Get Page by Page ID.</p>
@@ -1004,7 +1220,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">372</span>
+    <span class="phpdocumentor-element-found-in__line">463</span>
 </aside>
 
         <p class="phpdocumentor-summary">Setup a new Administrator Page.</p>
@@ -1039,7 +1255,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">391</span>
+    <span class="phpdocumentor-element-found-in__line">482</span>
 </aside>
 
         <p class="phpdocumentor-summary">Load template and render, then print it directly.</p>
@@ -1084,7 +1300,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">408</span>
+    <span class="phpdocumentor-element-found-in__line">499</span>
 </aside>
 
         <p class="phpdocumentor-summary">Load a template and render it.</p>
@@ -1129,7 +1345,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">425</span>
+    <span class="phpdocumentor-element-found-in__line">516</span>
 </aside>
 
         <p class="phpdocumentor-summary">Check whether the plugin has been initialized or not.</p>
@@ -1153,7 +1369,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">440</span>
+    <span class="phpdocumentor-element-found-in__line">531</span>
 </aside>
 
         <p class="phpdocumentor-summary">Requires plugin&#039;s default pages class.</p>
@@ -1177,7 +1393,7 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">456</span>
+    <span class="phpdocumentor-element-found-in__line">547</span>
 </aside>
 
         <p class="phpdocumentor-summary">Initialize default plugin pages.</p>
@@ -1206,6 +1422,99 @@
     
 </article>
                     <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_dofw_get_field_value">
+        dofw_get_field_value()
+        <a href="namespaces/default.html#function_dofw_get_field_value" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">566</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Get Field Value.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">dofw_get_field_value</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$id</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$default</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">null</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
+    <dl class="phpdocumentor-argument-list">
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$id</span>
+                : <span class="phpdocumentor-signature__argument__return-type">string</span>
+                            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"></section>
+
+            </dd>
+                    <dt class="phpdocumentor-argument-list__entry">
+                <span class="phpdocumentor-signature__argument__name">$default</span>
+                : <span class="phpdocumentor-signature__argument__return-type">mixed</span>
+                 = <span class="phpdocumentor-signature__argument__default-value">null</span>            </dt>
+            <dd class="phpdocumentor-argument-list__definition">
+                    <section class="phpdocumentor-description"><p>Default value if field's value empty or not present.</p>
+</section>
+
+            </dd>
+            </dl>
+
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_dofw_disable_demo">
+        dofw_disable_demo()
+        <a href="namespaces/default.html#function_dofw_disable_demo" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">583</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Disable plugin&#039;s demo.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">dofw_disable_demo</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"><p>Adds a filter which disables plugin's default demo.</p>
+</section>
+
+    
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
+    <h4 class="phpdocumentor-element__name" id="function_dofw_init_demo">
+        dofw_init_demo()
+        <a href="namespaces/default.html#function_dofw_init_demo" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">598</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Initialize plugin&#039;s demo.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility"></span>
+                <span class="phpdocumentor-signature__name">dofw_init_demo</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+    
+</article>
+                    <article class="phpdocumentor-element -function - ">
     <h4 class="phpdocumentor-element__name" id="function_dofw_init">
         dofw_init()
         <a href="namespaces/default.html#function_dofw_init" class="headerlink"><i class="fas fa-link"></i></a>
@@ -1213,42 +1522,21 @@
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">480</span>
+    <span class="phpdocumentor-element-found-in__line">623</span>
 </aside>
 
         <p class="phpdocumentor-summary">Begins execution of the plugin.</p>
 
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility"></span>
-                <span class="phpdocumentor-signature__name">dofw_init</span><span>(</span><span class="phpdocumentor-signature__argument"><span>[</span><span class="phpdocumentor-signature__argument__return-type">bool&nbsp;</span><span class="phpdocumentor-signature__argument__name">$register_defaults</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">false</span><span> ]</span></span><span class="phpdocumentor-signature__argument"><span>[</span><span>, </span><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$configs</span><span> = </span><span class="phpdocumentor-signature__argument__default-value">[]</span><span> ]</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">dofw_init</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
         <section class="phpdocumentor-description"><p>Since everything within the plugin is registered via hooks,
 then kicking off the plugin from this point in the file does
 not affect the page life cycle.</p>
 </section>
 
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$register_defaults</span>
-                : <span class="phpdocumentor-signature__argument__return-type">bool</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">false</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Enable / Disable registering plugin's default pages.</p>
-</section>
-
-            </dd>
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$configs</span>
-                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
-                 = <span class="phpdocumentor-signature__argument__default-value">[]</span>            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                    <section class="phpdocumentor-description"><p>Default Pages Configuration</p>
-</section>
-
-            </dd>
-            </dl>
-
+    
     
     <h5 class="phpdocumentor-tag-list__heading" id="tags">
         Tags
@@ -1276,7 +1564,7 @@ not affect the page life cycle.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">505</span>
+    <span class="phpdocumentor-element-found-in__line">647</span>
 </aside>
 
         <p class="phpdocumentor-summary">Simple debugging helper function.</p>
@@ -1315,7 +1603,7 @@ not affect the page life cycle.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">565</span>
+    <span class="phpdocumentor-element-found-in__line">713</span>
 </aside>
 
         <p class="phpdocumentor-summary">Simple `print_r` variant helper function.</p>
@@ -1371,7 +1659,7 @@ not affect the page life cycle.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">605</span>
+    <span class="phpdocumentor-element-found-in__line">755</span>
 </aside>
 
         <p class="phpdocumentor-summary">Simple JSON debugging helper function.</p>
@@ -1410,7 +1698,7 @@ not affect the page life cycle.</p>
     <aside class="phpdocumentor-element-found-in">
     <abbr class="phpdocumentor-element-found-in__file" title="includes/helper-functions.php"><a href="files/includes-helper-functions.html"><abbr title="includes/helper-functions.php">helper-functions.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">622</span>
+    <span class="phpdocumentor-element-found-in__line">772</span>
 </aside>
 
         <p class="phpdocumentor-summary">Audit a function time of execution.</p>

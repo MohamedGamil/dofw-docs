@@ -41,6 +41,11 @@ Search.appendIndex(
             "summary": "Add\u0020activation\u0020form\u0020page.",
             "url": "classes/Do-Framework-Admin.html#method__add_activation_page"
         },                {
+            "fqsen": "\\Do_Framework_Admin\u003A\u003A_get_active_admin_page\u0028\u0029",
+            "name": "_get_active_admin_page",
+            "summary": "Get\u0020currently\u0020active\u0020admin\u0020page.",
+            "url": "classes/Do-Framework-Admin.html#method__get_active_admin_page"
+        },                {
             "fqsen": "\\Do_Framework_Admin\u003A\u003AACTIVATION_PAGE",
             "name": "ACTIVATION_PAGE",
             "summary": "",
@@ -556,6 +561,11 @@ Search.appendIndex(
             "summary": "Sanitize\u0020array\u0020values\u0020recursively.",
             "url": "classes/Do-Framework-Admin-Page.html#method__sanitize_values_recursive"
         },                {
+            "fqsen": "\\Do_Framework_Admin_Page\u003A\u003A_get_page_query_slug\u0028\u0029",
+            "name": "_get_page_query_slug",
+            "summary": "Get\u0020active\u0020admin\u0020page\u0020from\u0020query\u0020paramter.",
+            "url": "classes/Do-Framework-Admin-Page.html#method__get_page_query_slug"
+        },                {
             "fqsen": "\\Do_Framework_Admin_Page\u003A\u003ASUPPORTED_PAGE_TYPES",
             "name": "SUPPORTED_PAGE_TYPES",
             "summary": "Supported\u0020Page\u0020Types.",
@@ -851,6 +861,11 @@ Search.appendIndex(
             "summary": "Enable\u0020Adding\u0020Plugins.",
             "url": "classes/Do-Framework-Default-Pages.html#constant_ENABLE_PLUGINS"
         },                {
+            "fqsen": "\\Do_Framework_Default_Pages\u003A\u003AVERSION",
+            "name": "VERSION",
+            "summary": "Set\u0020panel\u0020version.",
+            "url": "classes/Do-Framework-Default-Pages.html#constant_VERSION"
+        },                {
             "fqsen": "\\Do_Framework_Default_Pages\u003A\u003ACONFIG",
             "name": "CONFIG",
             "summary": "Default\u0020Pages\u0020Configuration\u0020Structure.",
@@ -1071,6 +1086,11 @@ Search.appendIndex(
             "summary": "Validate\u0020Given\u0020Arguments\u0020\/\u0020Inputs.",
             "url": "classes/Do-Framework-Field.html#method__validate"
         },                {
+            "fqsen": "\\Do_Framework_Field\u003A\u003A_get_active_admin_page\u0028\u0029",
+            "name": "_get_active_admin_page",
+            "summary": "Get\u0020currently\u0020active\u0020admin\u0020page.",
+            "url": "classes/Do-Framework-Field.html#method__get_active_admin_page"
+        },                {
             "fqsen": "\\Do_Framework_Field\u003A\u003AFIELD_TYPE",
             "name": "FIELD_TYPE",
             "summary": "Field\u0020Type.",
@@ -1231,10 +1251,15 @@ Search.appendIndex(
             "summary": "Get\u0020Item\u0020Store\u0020Link\u0020\/\u0020URL.",
             "url": "classes/Do-Framework-Front-Controller.html#method_get_store_link"
         },                {
-            "fqsen": "\\Do_Framework_Front_Controller\u003A\u003Aversion\u0028\u0029",
-            "name": "version",
-            "summary": "Get\u0020Plugin\u0020Version",
-            "url": "classes/Do-Framework-Front-Controller.html#method_version"
+            "fqsen": "\\Do_Framework_Front_Controller\u003A\u003Aplugin_version\u0028\u0029",
+            "name": "plugin_version",
+            "summary": "Get\u0020Plugin\u0020Version.",
+            "url": "classes/Do-Framework-Front-Controller.html#method_plugin_version"
+        },                {
+            "fqsen": "\\Do_Framework_Front_Controller\u003A\u003Apanel_version\u0028\u0029",
+            "name": "panel_version",
+            "summary": "Get\u0020Panel\u0020Version.",
+            "url": "classes/Do-Framework-Front-Controller.html#method_panel_version"
         },                {
             "fqsen": "\\Do_Framework_Front_Controller\u003A\u003Aasset_url\u0028\u0029",
             "name": "asset_url",
@@ -1350,6 +1375,21 @@ Search.appendIndex(
             "name": "get_current_namespace",
             "summary": "Get\u0020current\u0020namespace.",
             "url": "classes/Do-Framework-Registry.html#method_get_current_namespace"
+        },                {
+            "fqsen": "\\Do_Framework_Registry\u003A\u003Aget_active_namespace\u0028\u0029",
+            "name": "get_active_namespace",
+            "summary": "Get\u0020currently\u0020active\u0020namespace\u0020based\u0020on\u0020currently\u0020active\u0020admin\u0020page.",
+            "url": "classes/Do-Framework-Registry.html#method_get_active_namespace"
+        },                {
+            "fqsen": "\\Do_Framework_Registry\u003A\u003Aget_panel_config\u0028\u0029",
+            "name": "get_panel_config",
+            "summary": "Get\u0020panel\u0020configuration\u0020for\u0020a\u0020specific\u0020namespace.",
+            "url": "classes/Do-Framework-Registry.html#method_get_panel_config"
+        },                {
+            "fqsen": "\\Do_Framework_Registry\u003A\u003Aset_panel_config\u0028\u0029",
+            "name": "set_panel_config",
+            "summary": "Set\u0020panel\u0020configuration\u0020for\u0020a\u0020specific\u0020namespace.",
+            "url": "classes/Do-Framework-Registry.html#method_set_panel_config"
         },                {
             "fqsen": "\\Do_Framework_Registry\u003A\u003Aregister_page\u0028\u0029",
             "name": "register_page",
@@ -1501,6 +1541,16 @@ Search.appendIndex(
             "summary": "Get\u0020Theme\u0020Info.",
             "url": "classes/Do-Framework-Registry.html#method_get_theme_info"
         },                {
+            "fqsen": "\\Do_Framework_Registry\u003A\u003Aget_version\u0028\u0029",
+            "name": "get_version",
+            "summary": "Get\u0020panel\u0020version.",
+            "url": "classes/Do-Framework-Registry.html#method_get_version"
+        },                {
+            "fqsen": "\\Do_Framework_Registry\u003A\u003Aset_version\u0028\u0029",
+            "name": "set_version",
+            "summary": "Set\u0020panel\u0020version.",
+            "url": "classes/Do-Framework-Registry.html#method_set_version"
+        },                {
             "fqsen": "\\Do_Framework_Registry\u003A\u003Aimporter\u0028\u0029",
             "name": "importer",
             "summary": "Init\u0020\u0026\u0020Get\u0020Advanced\u0020Importer\u0020Adapter\u0020Instance.",
@@ -1556,6 +1606,16 @@ Search.appendIndex(
             "summary": "Add\u0020plugins\u0020actions\u0020to\u0020an\u0020array\u0020of\u0020plugins.",
             "url": "classes/Do-Framework-Registry.html#method__add_plugins_actions"
         },                {
+            "fqsen": "\\Do_Framework_Registry\u003A\u003A_namespace_or_active\u0028\u0029",
+            "name": "_namespace_or_active",
+            "summary": "Returns\u0020namespace\u0020if\u0020not\u0020empty,\u0020or\u0020currently\u0020active\u0020namespace.",
+            "url": "classes/Do-Framework-Registry.html#method__namespace_or_active"
+        },                {
+            "fqsen": "\\Do_Framework_Registry\u003A\u003A_namespace_or_current\u0028\u0029",
+            "name": "_namespace_or_current",
+            "summary": "Returns\u0020namespace\u0020if\u0020not\u0020empty,\u0020or\u0020currently\u0020set\u0020namespace.",
+            "url": "classes/Do-Framework-Registry.html#method__namespace_or_current"
+        },                {
             "fqsen": "\\Do_Framework_Registry\u003A\u003A\u0024_pages",
             "name": "_pages",
             "summary": "Admin\u0020Pages\u0020Registry.",
@@ -1581,55 +1641,10 @@ Search.appendIndex(
             "summary": "Admin\u0020Pages\u0020Root\u0020Tabs.",
             "url": "classes/Do-Framework-Registry.html#property__tabs"
         },                {
-            "fqsen": "\\Do_Framework_Registry\u003A\u003A\u0024_demos",
-            "name": "_demos",
-            "summary": "Demos\u0020Registry.",
-            "url": "classes/Do-Framework-Registry.html#property__demos"
-        },                {
-            "fqsen": "\\Do_Framework_Registry\u003A\u003A\u0024_required_plugins",
-            "name": "_required_plugins",
-            "summary": "Required\u0020Plugins\u0020Registry.",
-            "url": "classes/Do-Framework-Registry.html#property__required_plugins"
-        },                {
-            "fqsen": "\\Do_Framework_Registry\u003A\u003A\u0024_recommended_plugins",
-            "name": "_recommended_plugins",
-            "summary": "Recommended\u0020Plugins\u0020Registry.",
-            "url": "classes/Do-Framework-Registry.html#property__recommended_plugins"
-        },                {
-            "fqsen": "\\Do_Framework_Registry\u003A\u003A\u0024_panel_logo",
-            "name": "_panel_logo",
-            "summary": "Options\u0020Control\u0020Panel\u0020Logo.",
-            "url": "classes/Do-Framework-Registry.html#property__panel_logo"
-        },                {
-            "fqsen": "\\Do_Framework_Registry\u003A\u003A\u0024_panel_title",
-            "name": "_panel_title",
-            "summary": "Options\u0020Control\u0020Panel\u0020Primary\u0020Title.",
-            "url": "classes/Do-Framework-Registry.html#property__panel_title"
-        },                {
-            "fqsen": "\\Do_Framework_Registry\u003A\u003A\u0024_kb_links",
-            "name": "_kb_links",
-            "summary": "Knowledge\u0020Base\u0020Links.",
-            "url": "classes/Do-Framework-Registry.html#property__kb_links"
-        },                {
-            "fqsen": "\\Do_Framework_Registry\u003A\u003A\u0024_support_links",
-            "name": "_support_links",
-            "summary": "Support\u0020Links.",
-            "url": "classes/Do-Framework-Registry.html#property__support_links"
-        },                {
-            "fqsen": "\\Do_Framework_Registry\u003A\u003A\u0024_store_id",
-            "name": "_store_id",
-            "summary": "Item\u0020Store\u0020ID.",
-            "url": "classes/Do-Framework-Registry.html#property__store_id"
-        },                {
-            "fqsen": "\\Do_Framework_Registry\u003A\u003A\u0024_store_url",
-            "name": "_store_url",
-            "summary": "Item\u0020Purchase\u0020\/\u0020Store\u0020URL.",
-            "url": "classes/Do-Framework-Registry.html#property__store_url"
-        },                {
-            "fqsen": "\\Do_Framework_Registry\u003A\u003A\u0024_theme",
-            "name": "_theme",
-            "summary": "Managed\u0020Theme\u0020Info.",
-            "url": "classes/Do-Framework-Registry.html#property__theme"
+            "fqsen": "\\Do_Framework_Registry\u003A\u003A\u0024_panel_config",
+            "name": "_panel_config",
+            "summary": "Panel\u0020configurations.",
+            "url": "classes/Do-Framework-Registry.html#property__panel_config"
         },                {
             "fqsen": "\\Do_Framework_Stats_Helper",
             "name": "Do_Framework_Stats_Helper",
@@ -1801,10 +1816,10 @@ Search.appendIndex(
             "summary": "Define\u0020the\u0020locale\u0020for\u0020this\u0020plugin\u0020for\u0020internationalization.",
             "url": "classes/Do-Framework.html#method_set_locale"
         },                {
-            "fqsen": "\\Do_Framework\u003A\u003Adefine_debug_hook\u0028\u0029",
-            "name": "define_debug_hook",
+            "fqsen": "\\Do_Framework\u003A\u003Adefine_debug_hooks\u0028\u0029",
+            "name": "define_debug_hooks",
             "summary": "Register\u0020debugger\u0020shutdown\u0020hook.",
-            "url": "classes/Do-Framework.html#method_define_debug_hook"
+            "url": "classes/Do-Framework.html#method_define_debug_hooks"
         },                {
             "fqsen": "\\Do_Framework\u003A\u003Adefine_admin_hooks\u0028\u0029",
             "name": "define_admin_hooks",
@@ -2096,20 +2111,10 @@ Search.appendIndex(
             "summary": "File\u0020Field.",
             "url": "classes/DOFW-Fields-File.html"
         },                {
-            "fqsen": "\\DOFW\\Fields\\File\u003A\u003A__construct\u0028\u0029",
-            "name": "__construct",
-            "summary": "Class\u0020Constructor.",
-            "url": "classes/DOFW-Fields-File.html#method___construct"
-        },                {
             "fqsen": "\\DOFW\\Fields\\File\u003A\u003Aget_mode\u0028\u0029",
             "name": "get_mode",
             "summary": "Get\u0020Field\u0020Mode.",
             "url": "classes/DOFW-Fields-File.html#method_get_mode"
-        },                {
-            "fqsen": "\\DOFW\\Fields\\File\u003A\u003Aload_media\u0028\u0029",
-            "name": "load_media",
-            "summary": "Load\u0020WordPress\u0020Media.",
-            "url": "classes/DOFW-Fields-File.html#method_load_media"
         },                {
             "fqsen": "\\DOFW\\Fields\\File\u003A\u003Aget_options\u0028\u0029",
             "name": "get_options",
@@ -2145,11 +2150,6 @@ Search.appendIndex(
             "name": "DEFAULT_MODE",
             "summary": "Default\u0020File\u0020Mode.",
             "url": "classes/DOFW-Fields-File.html#constant_DEFAULT_MODE"
-        },                {
-            "fqsen": "\\DOFW\\Fields\\File\u003A\u003A\u0024_DID_LOAD",
-            "name": "_DID_LOAD",
-            "summary": "Did\u0020Load\u0020WordPress\u0020Media\u0020State.",
-            "url": "classes/DOFW-Fields-File.html#property__DID_LOAD"
         },                {
             "fqsen": "\\DOFW\\Fields\\Icon",
             "name": "Icon",
@@ -2481,10 +2481,30 @@ Search.appendIndex(
             "summary": "",
             "url": "namespaces/default.html#function_dofw_"
         },                {
+            "fqsen": "\\dofw_get_active_admin_page\u0028\u0029",
+            "name": "dofw_get_active_admin_page",
+            "summary": "Get\u0020current\u0020active\u0020admin\u0020page\u0020ID.",
+            "url": "namespaces/default.html#function_dofw_get_active_admin_page"
+        },                {
+            "fqsen": "\\dofw_active_namespace\u0028\u0029",
+            "name": "dofw_active_namespace",
+            "summary": "Get\u0020Active\u0020Namespace.",
+            "url": "namespaces/default.html#function_dofw_active_namespace"
+        },                {
+            "fqsen": "\\dofw_panel_config\u0028\u0029",
+            "name": "dofw_panel_config",
+            "summary": "Get\u0020\/\u0020Set\u0020panel\u0020configuration.",
+            "url": "namespaces/default.html#function_dofw_panel_config"
+        },                {
             "fqsen": "\\dofw_current_namespace\u0028\u0029",
             "name": "dofw_current_namespace",
             "summary": "Get\u0020\/\u0020Set\u0020Current\u0020Default\u0020Namespace.",
             "url": "namespaces/default.html#function_dofw_current_namespace"
+        },                {
+            "fqsen": "\\dofw_panel_version\u0028\u0029",
+            "name": "dofw_panel_version",
+            "summary": "Get\u0020\/\u0020Set\u0020panel\u0020version.",
+            "url": "namespaces/default.html#function_dofw_panel_version"
         },                {
             "fqsen": "\\dofw_get_page_url\u0028\u0029",
             "name": "dofw_get_page_url",
@@ -2541,6 +2561,11 @@ Search.appendIndex(
             "summary": "Get\u0020an\u0020instance\u0020of\u0020DO\u0020Framework\u0020Data\u0020Helper.",
             "url": "namespaces/default.html#function_dofw_data"
         },                {
+            "fqsen": "\\dofw_google_fonts\u0028\u0029",
+            "name": "dofw_google_fonts",
+            "summary": "Get\u0020a\u0020list\u0020of\u0020Google\u0020Fonts.",
+            "url": "namespaces/default.html#function_dofw_google_fonts"
+        },                {
             "fqsen": "\\dofw_logo\u0028\u0029",
             "name": "dofw_logo",
             "summary": "Get\u0020\/\u0020Set\u0020Control\u0020Panel\u0020Logo.",
@@ -2590,6 +2615,21 @@ Search.appendIndex(
             "name": "dofw_init_defaults",
             "summary": "Initialize\u0020default\u0020plugin\u0020pages.",
             "url": "namespaces/default.html#function_dofw_init_defaults"
+        },                {
+            "fqsen": "\\dofw_get_field_value\u0028\u0029",
+            "name": "dofw_get_field_value",
+            "summary": "Get\u0020Field\u0020Value.",
+            "url": "namespaces/default.html#function_dofw_get_field_value"
+        },                {
+            "fqsen": "\\dofw_disable_demo\u0028\u0029",
+            "name": "dofw_disable_demo",
+            "summary": "Disable\u0020plugin\u0027s\u0020demo.",
+            "url": "namespaces/default.html#function_dofw_disable_demo"
+        },                {
+            "fqsen": "\\dofw_init_demo\u0028\u0029",
+            "name": "dofw_init_demo",
+            "summary": "Initialize\u0020plugin\u0027s\u0020demo.",
+            "url": "namespaces/default.html#function_dofw_init_demo"
         },                {
             "fqsen": "\\dofw_init\u0028\u0029",
             "name": "dofw_init",
