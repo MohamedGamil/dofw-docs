@@ -97,7 +97,7 @@
                     <div class="col-md-12">
                         <div class="big-title text-center">
                             <h1>DO Framework</h1>
-                            <p class="lead">Documentation for version 1.9.5</p>
+                            <p class="lead">Documentation for version 1.9.8</p>
                         </div>
                         <!-- end title -->
                     </div>
@@ -116,8 +116,8 @@
                     <nav class="docs-sidebar" data-spy="affix" data-offset-top="300" data-offset-bottom="200" role="navigation">
                         <ul class="nav">
                             <li><a href="#getting-started">Getting Started</a></li>
-                            <li><a href="#instllation">How to Install the Plugin</a></li>
-                            <li><a href="#embedding">How to Embed the Plugin</a></li>
+                            <li><a href="#instllation">Installing the Plugin</a></li>
+                            <li><a href="#usage">Using the Plugin</a></li>
                             <li><a href="#adding-admin-pages">Adding Admin Page</a></li>
                             <li><a href="#adding-page-sections">Adding Sections</a></li>
                             <li><a href="#adding-page-groups">Adding Groups</a></li>
@@ -178,7 +178,7 @@
                                         <div class="intro1">
                                             <ul>
                                                 <li><strong>Item Name: </strong>DO Framework</li>
-                                                <li><strong>Item Version: </strong> v1.9.5</li>
+                                                <li><strong>Item Version: </strong> v1.9.8</li>
                                                 <li><strong>Author: </strong> <a href="https://codecanyon.net/user/dedulab" target="_blank">Dedulab</a></li>
                                                 <li><strong>Support: </strong> <a href="https://dedulab.com/support" target="_blank">Get Support</a></li>
                                                 <li><strong>License: </strong> <a href="https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html" target="_blank">GNU General Public License v2.0 or later</a></li>
@@ -271,7 +271,7 @@
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text">How to Install the Plugin <hr></h2>
+                                <h2 class="dark-text"> Installing the Plugin <hr></h2>
                             </div>
                             <!-- end col -->
                         </div>
@@ -316,66 +316,15 @@
                     </section>
                     <!-- end section -->
 
-                    <section id="embedding" class="section">
+                    <section id="usage" class="section">
 
                         <div class="row">
                             <div class="col-md-12 left-align">
-                                <h2 class="dark-text"> How to Embed the Plugin <hr></h2>
+                                <h2 class="dark-text"> Using the Plugin <hr></h2>
                             </div>
                             <!-- end col -->
                         </div>
                         <!-- end row -->
-
-                        <h4>Using Composer</h4>
-                        <p>
-                            Since version <code>1.9.0</code> DOFW supports being used as a vendor package using Composer package manager, this makes things much easier to add DOFW to your own plugin or theme if you're already using Composer.
-                            <br><br>
-                            Here is how to add DOFW to your composer requirements:
-                            <br>
-                            First, add <code>"dedulab/do-framework": "*"</code> to your <code>composer.json</code> file, and inside the <code>"require"</code> section.
-                        </p>
-                        <pre class="brush: javascript; highlight: [4]">
-                            {
-                                "require": {
-                                    "php": ">=5.6.0",
-                                    "dedulab/do-framework": "*"
-                                }
-                            }
-                        </pre>
-                        <br>
-
-                        <p>
-                            Then, after downloading DOFW source code and storing it somewhere on your local machine, add the following code to your <code>composer.json</code> file, in order to allow composer to correctly resolve DOFW pacakge and add it to your vendors directory.
-                        </p>
-                        <pre class="brush: javascript; highlight: [3, 4, 5, 6, 7, 8, 9]">
-                            {
-                                "repositories": {
-                                    "do-framework": {
-                                      "type": "path",
-                                      "url": "path/to/do-framework",
-                                      "options": {
-                                          "symlink": false
-                                      }
-                                    }
-                                }
-                            }
-                        </pre>
-                        <hr>
-
-                        <h4>Directly including the plugin</h4>
-                        <p>
-                            Alternatively, you may also add DOFW directly to your own source code without any concerns that it will interfere with other versions of the plugin being used elsewhere within the same WordPress installation.
-                            <br>
-                            But also keep in mind that if the plugin already installed and activated using WordPress plugin manager, that version will take precedence over all other versions of the plugin used anywhere else.
-                        </p>
-
-                        <p>
-                            To directly include the plugin within your code, you must require plugin's <code>autoload.php</code> at the earliest point of your code execution.
-                        </p>
-                        <pre class="brush: php; highlight: [1]">
-                            require_once('path/to/dofw/autoload.php');
-                        </pre>
-                        <hr>
                         
                         <h4>Using DOFW with another plugin or theme</h4>
 
@@ -384,7 +333,8 @@
                         </div>
 
                         <p>
-                            You can use DOFW with other plugin(s) either by using it as a required peer plugin which can be achieved by simply adding it to WordPress plugins directory.
+                            You can use DOFW with other plugin(s) or themes either by using it as a required peer plugin which can be achieved by simply adding it to WordPress plugins directory.
+                            <strong>Highly recommended.</strong>
                         </p>
                         <p>
                             <i>Or</i>, you can include plugin files under your plugin or theme directory, here is an example of your plugin structure after adding DOFW to a plugin:
@@ -3417,8 +3367,50 @@
                                 <pre class="brush: html">
 
                                         -----------------------------------------------------------------------------------------
-                                        Plugin version 1.9.5
+                                        Plugin version 1.9.8
+                                        ------------------------------------------------------------------------------------------
+                                        - UI Hotfixes
+                                        - Fix for fonts issue with admin bar
+                                        - Fix issue with plugin affecting wordpress admin fonts
+                                        - Update semantic UI fonts
+                                        - Small UI Fixes
+                                        - Update build script
+                                        - Add Google Fonts Helper
+                                        - Small notice issue fix
+                                        - Disable intro animations by configuration
+                                        - Add get field value helper
+                                        - Add new helper functions for panel configuration
+                                        - Require demo default pages
+
                                         -----------------------------------------------------------------------------------------
+                                        Plugin version 1.9.7
+                                        ------------------------------------------------------------------------------------------
+                                        - Fix a debugger issue
+                                        - Improve performance
+                                        - Solve issues related to WP media
+                                        - Fix a small order issue with builders
+                                        - Fix an issue with file field loading media incorrectly
+                                        - Small fix for group builders
+
+                                        -----------------------------------------------------------------------------------------
+                                        Plugin version 1.9.6
+                                        ------------------------------------------------------------------------------------------
+                                        - Enqueue assets on admin pages only
+                                        - Disable plugin demo mode by default
+                                        - Fix a debugger issue
+                                        - Improve DOFW debugger
+                                        - Improve DOFW debugger
+                                        - Support builder items reorder
+                                        - Solve backup / restore issues
+                                        - Admin page class refactor
+                                        - Solve many bugs relevant to fields saving / updating
+                                        - Remove unwanted post paramters
+                                        - Fix builders naming
+                                        - Support namespaces in get pages at registry
+
+                                        -----------------------------------------------------------------------------------------
+                                        Plugin version 1.9.5
+                                        ------------------------------------------------------------------------------------------
                                         - Fix a debugger issue
                                         - Improve DOFW debugger
                                         - Support builder items reorder
